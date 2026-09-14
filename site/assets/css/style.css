@@ -143,7 +143,10 @@ p { max-width: var(--measure); }
   font-style: normal;
   border-bottom: 1px dotted var(--fern);
   color: var(--ink-60);
-  white-space: nowrap;
+  /* Placeholders can be whole sentences. nowrap forced horizontal scrolling
+     on four pages at every width up to 1440px. */
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 /* --- Links ---------------------------------------------------------------- */
@@ -459,7 +462,10 @@ html:not(.js) .stagger > * { opacity: 1; transform: none; }
 }
 @media (max-width: 800px) {
   .chain { display: block; }
-  .chain__rule { width: 48px; margin: var(--s2) 0; transform: none; }
+  /* On a phone the three statements stack, with the rule between them on its
+     own line — inline, it landed mid-sentence. */
+  .chain > span:not(.chain__rule) { display: block; }
+  .chain__rule { display: block; width: 48px; margin: var(--s2) 0; transform: none; }
 }
 
 /* --- Demo / pending-data notice ------------------------------------------- */
