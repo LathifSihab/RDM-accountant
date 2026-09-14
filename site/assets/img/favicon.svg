@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="RDM Accountants">
+  <!-- Concept 2, Cashflow. Monogram-only lockup, no wordmark — per 05
+       §Required deliverables, this is the 16px and 32px case.
+
+       Webfonts cannot load inside a favicon, so the letters fall back to a
+       system Didone here. The production favicon must ship as outlined paths
+       drawn from the approved mark, and must be tested at 16px on both light
+       and dark browser chrome before sign-off. See 05 §Favicon. -->
+  <rect width="32" height="32" fill="#F1F1EE"/>
+  <g fill="#3C3C3B" font-family="Didot, 'Bodoni MT', Georgia, 'Times New Roman', serif" font-size="14" text-anchor="middle">
+    <text x="9" y="14">R</text>
+    <text x="23" y="14">D</text>
+    <text x="16" y="30">M</text>
+  </g>
+  <path d="M0.5 24 C6 24 6.5 17 16 17 C25.5 17 26 24 31.5 24"
+        fill="none" stroke="#14453A" stroke-width="1.7" stroke-linecap="round"/>
+</svg>
