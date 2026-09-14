@@ -29,6 +29,20 @@ once with the pages it affects. **Deploy only when it passes.** Current state:
 
 ## What the client still has to supply
 
+**`docs/client-checklist.md` is the version to send RDM** — plain Dutch, no
+jargon, grouped by who can answer it.
+
+**`content.json` is where the answers go.** Every placeholder on the site
+carries a key, so the telephone number is one entry here rather than 37 edits
+across 11 files. Fill in `waarde`, then:
+
+```
+python tools/apply_content.py     # writes the answers into every page
+bash tools/check.sh               # says what is still missing
+```
+
+It is safe to re-run as answers arrive, and `--dry-run` previews the change.
+
 Run `tools/preflight.py` for the live list. The big ones:
 
 1. **The telephone number.** Appears as a placeholder in the top bar, mobile
@@ -102,7 +116,8 @@ canonical form, and no redirect loop.
 README.md            this file
 netlify.toml         Netlify config, publishes site/
 vercel.json          Vercel config, publishes site/
-docs/                the specification documents (01-06, notes)
+content.json         the client's answers - one place for every fact
+docs/                specifications (01-06), notes, and the client checklist
 tools/               checks - NOT deployed
 site/                the document root - everything here is deployed
   *.html
