@@ -199,6 +199,11 @@ A working structure: why the practice was started, what the founders found wrong
 > which `04` sanctions ("real photographs or initials only"). Initials are
 > derived automatically from the name in `content.json`. When real portraits
 > arrive they drop into the same list; nothing else changes.
+>
+> **The list is generated, not fixed at three slots (2026-09-14).** The team size
+> was never known. `content.json` holds `_team.leden`, one object per person, and
+> `tools/apply_content.py` renders the list from it. First member, supplied by the
+> client and checked against the KBO: Muhammet Erdem, zaakvoerder.
 
 Per person: initials or photograph, name, role, one line about what they handle, direct mail address. The direct mail address is the point — it proves the reachability claim in a way a paragraph cannot. A generic `info@` for everyone undercuts the whole positioning.
 

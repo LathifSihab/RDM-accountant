@@ -37,6 +37,13 @@ These must be answered before any build starts. Nothing below has been invented 
   and cache policy for four hosts, structured data for local search, sitemap,
   robots, full icon set, social card, 404 and thank-you pages, working form
   submission, click-to-load map, and four legal pages as reviewed skeletons.
+- **Verified against the KBO (public company register), 2026-09-14.** For
+  ondernemingsnummer 1007.002.332: RDM Accountants, commanditaire vennootschap,
+  active, begindatum **11 maart 2024**; seat Boomgaardstraat 145A, 2018 Antwerpen;
+  **zaakvoerder Muhammet Erdem** since 11 maart 2024. This resolves the founding
+  year (§1 item 2) and confirms the one team name the client supplied. The KBO
+  also lists a private Yahoo mail address for him — deliberately not used on the
+  site. No telephone number is recorded there, so §1 item 3 remains open.
 - **A launch gate now exists: `site/tools/preflight.py`.** It fails while any
   placeholder or the invented tariff set remains, so the site cannot be deployed
   with demo content by accident. It currently reports 45 distinct blockers, which

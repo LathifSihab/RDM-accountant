@@ -67,14 +67,23 @@ We hebben per onderdeel een bedrag nodig:
 
 ## 4. Het team
 
-Per persoon, voor de pagina Over ons:
+We hebben één naam ontvangen, en die staat nu op de site:
 
-| | Persoon 1 | Persoon 2 | Persoon 3 |
-|---|---|---|---|
-| Naam | | | |
-| Functie | | | |
-| Eén zin: wat volgt deze persoon op? | | | |
-| Direct mailadres | | | |
+| | |
+|---|---|
+| Naam | **Muhammet Erdem** |
+| Functie | **Zaakvoerder** — zo vermeld in de KBO, sinds 11 maart 2024 |
+| Eén zin: wat volgt hij op? | ______________________ |
+| Direct mailadres (zakelijk) | ______________________ |
+
+> **Klopt "Zaakvoerder" als titel op de site, of liever iets anders**
+> (bijvoorbeeld "Gecertificeerd accountant")? ______________________
+>
+> **Werken er nog andere mensen bij RDM die op de site moeten?**
+> Per persoon: naam, functie, één zin, zakelijk mailadres. ______________________
+
+De KBO vermeldt ook een privé-mailadres. Dat zetten we bewust **niet** op de
+site; we hebben een zakelijk adres nodig.
 
 Foto's zijn **niet** nodig om live te gaan. We tonen nu de initialen van elke
 persoon, gezet in het lettertype van het logo. Sturen jullie later toch
@@ -86,7 +95,8 @@ precies de belofte onderuit waar de rest van de site op steunt.
 
 ## 5. Het kantoor
 
-> **Oprichtingsjaar:** ______________________
+> **Oprichtingsjaar:** **2024** — volgens de KBO is RDM Accountants CommV
+> opgericht op 11 maart 2024. Klopt dat? ______________________
 > **Waarom is RDM opgericht?** Drie alinea's: waarom jullie begonnen zijn, wat
 > jullie fout vonden aan hoe boekhouding meestal loopt, en wat jullie daarom
 > anders doen. Geen brochuretaal — dit is de pagina waar een klein kantoor het
@@ -166,7 +176,7 @@ Elk antwoord hierboven hoort bij een sleutel in `content.json`:
 | 1 | `telefoon` |
 | 2 | `bereikbaarheid`, `reactietermijn`, `openingsuren`, `whatsapp` |
 | 3 | rule set in `site/assets/js/simulator.js` + `PRICES_CONFIRMED` |
-| 4 | `team_1..3_naam` / `_functie` / `_rol` / `_mail` |
+| 4 | `_team.leden` — één object per persoon |
 | 5 | `oprichtingsjaar`, `oprichtingsverhaal`, `verzekering`, `openbaar_vervoer`, `parkeren` |
 | 6 | `papier_onderbouwing`, `duurzaamheid_extra` |
 | 7 | `extra_diensten` |

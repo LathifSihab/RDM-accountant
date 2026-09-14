@@ -39,7 +39,8 @@
     "vraag": "In welk jaar is RDM Accountants opgericht?",
     "voorbeeld": "2019",
     "type": "tekst",
-    "waarde": null
+    "waarde": "2024",
+    "_bron": "KBO, ondernemingsnummer 1007.002.332: begindatum 11 maart 2024."
   },
   "oprichtingsverhaal": {
     "vraag": "Drie alinea's: waarom het kantoor er kwam, wat jullie fout vonden aan hoe boekhouding meestal loopt, en wat jullie daarom anders doen. Eerste persoon meervoud, geen brochuretaal.",
@@ -87,78 +88,6 @@
     "vraag": "Datum waarop de juridische teksten zijn nagekeken en goedgekeurd. Pas invullen ná de review.",
     "voorbeeld": "1 oktober 2026",
     "type": "tekst",
-    "waarde": null
-  },
-  "team_1_naam": {
-    "vraag": "Teamlid 1: naam. De initialen op de site worden hieruit afgeleid.",
-    "voorbeeld": "Jan Janssens",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_1_functie": {
-    "vraag": "Teamlid 1: functie.",
-    "voorbeeld": "Gecertificeerd accountant",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_1_rol": {
-    "vraag": "Teamlid 1: één zin over wat deze persoon opvolgt.",
-    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_1_mail": {
-    "vraag": "Teamlid 1: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
-    "voorbeeld": "jan@rdmaccountants.be",
-    "type": "mail",
-    "waarde": null
-  },
-  "team_2_naam": {
-    "vraag": "Teamlid 2: naam. De initialen op de site worden hieruit afgeleid.",
-    "voorbeeld": "Jan Janssens",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_2_functie": {
-    "vraag": "Teamlid 2: functie.",
-    "voorbeeld": "Gecertificeerd accountant",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_2_rol": {
-    "vraag": "Teamlid 2: één zin over wat deze persoon opvolgt.",
-    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_2_mail": {
-    "vraag": "Teamlid 2: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
-    "voorbeeld": "jan@rdmaccountants.be",
-    "type": "mail",
-    "waarde": null
-  },
-  "team_3_naam": {
-    "vraag": "Teamlid 3: naam. De initialen op de site worden hieruit afgeleid.",
-    "voorbeeld": "Jan Janssens",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_3_functie": {
-    "vraag": "Teamlid 3: functie.",
-    "voorbeeld": "Gecertificeerd accountant",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_3_rol": {
-    "vraag": "Teamlid 3: één zin over wat deze persoon opvolgt.",
-    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
-    "type": "tekst",
-    "waarde": null
-  },
-  "team_3_mail": {
-    "vraag": "Teamlid 3: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
-    "voorbeeld": "jan@rdmaccountants.be",
-    "type": "mail",
     "waarde": null
   },
   "av_opdrachtbrief": {
@@ -238,6 +167,23 @@
     "voorbeeld": "",
     "type": "html",
     "waarde": null
+  },
+  "_team": {
+    "_lees_dit": [
+      "Eén object per persoon. Extra teamlid? Kopieer een object en vul het in.",
+      "Laat null staan wat je nog niet weet; dat blijft dan als open punt zichtbaar.",
+      "Initialen worden automatisch uit de naam afgeleid.",
+      "mail: alleen een zakelijk adres van het kantoor. Nooit een privéadres."
+    ],
+    "leden": [
+      {
+        "naam": "Muhammet Erdem",
+        "functie": "Zaakvoerder",
+        "rol": null,
+        "mail": null,
+        "_bron": "Naam aangeleverd door de klant. Functie volgens de KBO: zaakvoerder sinds 11 maart 2024. De KBO vermeldt ook een privé-mailadres; dat wordt bewust niet gebruikt."
+      }
+    ]
   },
   "_notities": {
     "av_geraamte": {
