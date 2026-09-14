@@ -1086,3 +1086,127 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 .map { border-radius: var(--r-card); overflow: hidden; }
 .chain { font-weight: 800; letter-spacing: -0.02em; }
 .footer h2 { font-weight: 700; }
+
+/* --- how-it-works illustrations -------------------------------------------
+   Product-style scenes built from HTML and inline SVG: no image files, no
+   third-party requests, and no inline style attributes (the CSP forbids
+   them), so every size and bar height lives here. Purely decorative; the
+   step text beside each one carries the meaning. */
+
+.zig__visual.ill { display: block; aspect-ratio: 16 / 11; background:
+  radial-gradient(420px 260px at 80% 0%, var(--tint), transparent 70%), var(--white); }
+.ill svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ill__step { position: absolute; left: 18px; top: 16px; z-index: 3; display: grid; place-items: center;
+  width: 34px; height: 34px; border-radius: 50%; background: var(--fern); color: #fff; font-weight: 800; font-size: 15px; }
+
+.ill-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--moss); }
+.ill-live-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(34,197,94,.2); }
+.ill-pill { font-size: 11px; font-weight: 700; color: var(--fern); background: var(--tint); padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.ill-ok { width: 22px; height: 22px; border-radius: 50%; background: var(--mint); color: #fff; padding: 4px; flex: none; }
+.ill-ok svg { stroke-width: 3.2; }
+
+.ill-chip { position: absolute; z-index: 2; display: flex; align-items: center; gap: 8px; padding: 9px 14px;
+  background: var(--white); border: 1px solid var(--moss); border-radius: 999px; box-shadow: var(--shadow-card);
+  font-size: 13px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+.ill-chip svg { width: 16px; height: 16px; color: var(--fern); }
+
+.ill-bubble { position: absolute; z-index: 2; max-width: 220px; padding: 10px 14px; border-radius: 16px;
+  font-size: 13px; line-height: 1.4; font-weight: 600; box-shadow: var(--shadow-card); }
+
+/* 1 — video call */
+.ill-call { position: absolute; left: 7%; right: 14%; top: 17%; bottom: 25%; border-radius: 18px; overflow: hidden;
+  background: #0F2A21; box-shadow: var(--shadow-card); display: grid; grid-template-rows: auto 1fr auto; }
+.ill-call__bar { display: flex; align-items: center; gap: 6px; padding: 10px 12px; }
+.ill-call__bar .ill-dot { background: rgba(255,255,255,.25); }
+.ill-call__title { margin-left: 8px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,.75); }
+.ill-call__tiles { display: grid; grid-template-columns: 1.4fr 1fr; gap: 8px; padding: 0 10px; }
+.ill-tile { position: relative; border-radius: 12px; background: linear-gradient(160deg, #E7F3EB, #CFE7D8); display: grid; place-items: center; }
+.ill-tile--dark { background: linear-gradient(160deg, #1D5A43, #15803D); }
+.ill-avatar { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; background: #fff; color: var(--forest); font-weight: 800; font-size: 18px; }
+.ill-avatar--light { width: 44px; height: 44px; font-size: 13px; background: var(--forest); color: #fff; }
+.ill-tile__name { position: absolute; left: 8px; bottom: 7px; font-size: 10px; font-weight: 700; color: #fff; background: rgba(0,0,0,.28); padding: 2px 7px; border-radius: 6px; }
+.ill-tile:not(.ill-tile--dark) .ill-tile__name { color: var(--forest); background: rgba(255,255,255,.7); }
+.ill-live { position: absolute; right: 8px; top: 7px; font-size: 10px; font-weight: 800; color: #fff; background: #E11D48; padding: 1px 7px; border-radius: 6px; text-transform: uppercase; }
+.ill-call__controls { display: flex; justify-content: center; gap: 10px; padding: 10px; }
+.ill-btn { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.14); color: #fff; padding: 8px; }
+.ill-btn--end { background: #E11D48; }
+.ill-bubble--a { right: 3%; bottom: 3%; background: var(--white); color: var(--ink); border: 1px solid var(--moss); border-bottom-right-radius: 4px; }
+.ill-chip--cal { right: 4%; top: 5%; }
+
+/* 2 — documents in */
+.ill-phone { position: absolute; left: 8%; top: 12%; bottom: 10%; width: 30%; border-radius: 26px; background: var(--forest);
+  padding: 22px 9px 42px; box-shadow: var(--shadow-card); }
+.ill-phone__notch { position: absolute; left: 50%; top: 8px; width: 34%; height: 7px; transform: translateX(-50%); border-radius: 6px; background: rgba(255,255,255,.2); }
+.ill-phone__shutter { position: absolute; left: 50%; bottom: 10px; width: 24px; height: 24px; transform: translateX(-50%); border-radius: 50%; border: 3px solid #fff; }
+.ill-receipt { height: 100%; border-radius: 6px; background: #fff; padding: 12px 10px; display: grid; align-content: start; gap: 8px;
+  outline: 2px dashed var(--mint); outline-offset: 4px; }
+.ill-receipt i { display: block; height: 6px; border-radius: 3px; background: var(--moss); }
+.ill-receipt i.short { width: 55%; }
+.ill-receipt b { display: block; height: 10px; width: 70%; margin-top: 6px; border-radius: 3px; background: var(--fern); }
+.zig__visual.ill svg.ill-flow { position: absolute; left: 39%; top: 44%; width: 12%; height: 34px; color: var(--mint); overflow: visible; }
+.zig__visual.ill .ill-flow path { stroke-width: 3; stroke-dasharray: 5 6; }
+.zig__visual.ill .ill-flow path + path { stroke-dasharray: none; }
+.ill-inbox { position: absolute; right: 6%; top: 18%; width: 48%; display: grid; gap: 9px; }
+.ill-inbox li { display: flex; align-items: center; gap: 9px; padding: 9px 10px; background: var(--white); border: 1px solid var(--moss); border-radius: 12px; box-shadow: var(--shadow-card); }
+.ill-file { width: 30px; height: 30px; border-radius: 9px; background: var(--tint); color: var(--fern); padding: 6px; flex: none; }
+.ill-inbox__txt { display: grid; min-width: 0; flex: 1; }
+.ill-inbox__txt b { font-size: 11.5px; font-weight: 700; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ill-inbox__txt em { font-style: normal; font-size: 10.5px; color: var(--ink-60); }
+
+/* 3 — dashboard */
+.ill-dash { position: absolute; left: 9%; right: 9%; top: 15%; bottom: 12%; padding: 16px 18px; border-radius: 18px;
+  background: var(--white); border: 1px solid var(--moss); box-shadow: var(--shadow-card); display: grid; grid-template-rows: auto auto 1fr auto; gap: 12px; }
+.ill-dash__head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.ill-dash__head b { font-size: 15px; font-weight: 800; }
+.ill-dash__kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ill-kpi { display: grid; gap: 6px; }
+.ill-kpi em { font-style: normal; font-size: 11px; font-weight: 700; color: var(--ink-60); }
+.ill-kpi__bar { height: 9px; border-radius: 999px; background: var(--tint); position: relative; overflow: hidden; }
+.ill-kpi__bar::after { content: ""; position: absolute; inset: 0 22% 0 0; border-radius: 999px; background: linear-gradient(90deg, var(--fern), var(--mint)); }
+.ill-kpi__bar--soft::after { inset: 0 54% 0 0; background: #9FD3B2; }
+.ill-chart { display: flex; align-items: flex-end; gap: 7px; min-height: 60px; padding-top: 4px; border-bottom: 1px solid var(--moss); }
+.ill-chart span { flex: 1; border-radius: 6px 6px 0 0; background: #CFE7D8; }
+.ill-chart span:nth-child(1) { height: 38%; } .ill-chart span:nth-child(2) { height: 52%; }
+.ill-chart span:nth-child(3) { height: 44%; } .ill-chart span:nth-child(4) { height: 66%; }
+.ill-chart span:nth-child(5) { height: 58%; } .ill-chart span:nth-child(6) { height: 74%; }
+.ill-chart span:nth-child(7) { height: 69%; } .ill-chart span:nth-child(8) { height: 90%; background: var(--fern); }
+.ill-task { display: flex; align-items: center; gap: 9px; font-size: 12.5px; font-weight: 700; }
+.ill-chip--float { right: 4%; top: 6%; }
+
+/* 4 — annual report + conversation */
+.ill-report { position: absolute; left: 8%; top: 16%; bottom: 10%; width: 40%; padding: 42px 16px 16px; border-radius: 14px;
+  background: var(--white); border: 1px solid var(--moss); box-shadow: var(--shadow-card); transform: rotate(-4deg);
+  display: grid; align-content: start; gap: 9px; }
+.ill-report__tab { position: absolute; left: 14px; top: 12px; font-size: 12px; font-weight: 800; color: var(--forest); }
+.ill-report__donut { width: 62px; height: 62px; margin-bottom: 6px; color: var(--moss); }
+.ill-report__donut svg { stroke-width: 7; transform: rotate(-90deg); }
+.ill-report__donut .seg { stroke: var(--fern); }
+.ill-report i { display: block; height: 7px; border-radius: 4px; background: var(--moss); }
+.ill-report i.short { width: 60%; }
+.ill-chat { position: absolute; right: 5%; top: 20%; width: 50%; display: grid; gap: 10px; }
+.ill-chat .ill-bubble { position: static; max-width: none; }
+.ill-bubble--them { background: var(--white); color: var(--ink); border: 1px solid var(--moss); border-bottom-left-radius: 4px; margin-right: 14%; }
+.ill-bubble--us { background: var(--fern); color: #fff; border-bottom-right-radius: 4px; margin-left: 10%; }
+.ill-typing { justify-self: start; display: flex; gap: 5px; padding: 11px 14px; background: var(--white); border: 1px solid var(--moss); border-radius: 16px; }
+.ill-typing span { width: 7px; height: 7px; border-radius: 50%; background: var(--ink-60); opacity: .5; }
+
+/* small screens: keep the scenes, drop the least important floating pieces */
+@media (max-width: 900px) {
+  .zig__visual.ill { aspect-ratio: 16 / 12; }
+  .ill-bubble, .ill-chip { font-size: 11.5px; }
+}
+@media (max-width: 520px) {
+  .zig__visual.ill { aspect-ratio: 1 / 1; }
+  .ill-chip--cal, .ill-chip--float { display: none; }
+  .ill-call { left: 6%; right: 6%; top: 12%; bottom: 30%; }
+  .ill-bubble--a { left: 8%; right: 8%; bottom: 5%; max-width: none; }
+  .ill-phone { width: 34%; left: 5%; }
+  .zig__visual.ill svg.ill-flow { display: none; }
+  .ill-call__tiles .ill-tile:not(.ill-tile--dark) .ill-tile__name { display: none; }
+  .ill-avatar { width: 48px; height: 48px; font-size: 15px; }
+  .ill-inbox { width: 55%; right: 4%; top: 14%; }
+  .ill-inbox li:nth-child(3) { display: none; }
+  .ill-report { width: 44%; left: 5%; }
+  .ill-chat { width: 52%; right: 4%; top: 14%; }
+  .ill-typing { display: none; }
+}

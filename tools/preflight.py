@@ -142,6 +142,8 @@ for p in html_files():
     for host in THIRD_PARTY:
         if host in s:
             block(f"third-party request to {host} - GDPR exposure, self-host it", p.name)
+    if re.search(r'\sstyle="', s):
+        block("inline style attribute - the CSP blocks it silently in production; use a class", p.name)
     if "<iframe" in s:
         block("hard-coded iframe - third-party frames must be click-to-load", p.name)
 
