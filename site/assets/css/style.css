@@ -1087,7 +1087,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 .sim__progress .n { font-family: var(--text); font-weight: 700; }
 .steps__n, .people__initials { font-family: var(--display); font-weight: 800; }
 .people__initials { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--tint); color: var(--forest); font-size: 22px; }
-.demo-flag { border-radius: var(--r-pill); }
+/* Notices can run to a sentence or two. A pill cannot wrap cleanly, so they are
+   a rounded box that wraps within its container. */
+.demo-flag { display: inline-block; max-width: 100%; border-radius: 12px; white-space: normal; overflow-wrap: break-word; }
 .map { border-radius: var(--r-card); overflow: hidden; }
 .chain { font-weight: 800; letter-spacing: -0.02em; }
 .footer h2 { font-weight: 700; }
