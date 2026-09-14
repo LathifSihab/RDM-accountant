@@ -186,15 +186,19 @@ warn("the logo is live SVG <text>, not outlines. Ship the designer's vector "
 # it is all clear, the guard has to come off or the real site never gets
 # indexed. Checking it last means it never nags during staging.
 
-netlify = (ROOT.parent / "netlify.toml")
-guard_on = netlify.is_file() and "X-Robots-Tag" in netlify.read_text(encoding="utf-8")
+CONFIGS = [ROOT.parent / "netlify.toml", ROOT / "_headers", ROOT / ".htaccess"]
+guarded = [c.name for c in CONFIGS
+           if c.is_file() and "X-Robots-Tag" in c.read_text(encoding="utf-8")]
+missing = [c.name for c in CONFIGS if c.is_file() and c.name not in guarded]
 
-if blockers and not guard_on:
-    block("netlify.toml has no X-Robots-Tag noindex, but the site still has "
-          "placeholders. Do not publish an indexable preview with invented prices.")
-elif not blockers and guard_on:
-    block("last step: remove the X-Robots-Tag noindex line from netlify.toml. "
-          "Everything else is clear, so the site is ready to be indexed.")
+if blockers and missing:
+    block("no X-Robots-Tag noindex in " + ", ".join(missing) +
+          ", but the site still has placeholders. Do not publish an indexable "
+          "preview with invented prices.")
+elif not blockers and guarded:
+    block("last step: remove the X-Robots-Tag noindex line from " +
+          ", ".join(guarded) + ". Everything else is clear, so the site is "
+          "ready to be indexed.")
 
 
 # --- Report -------------------------------------------------------------------
