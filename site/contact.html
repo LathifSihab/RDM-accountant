@@ -53,6 +53,11 @@
     "addressLocality": "Antwerpen",
     "addressCountry": "BE"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.2012948,
+    "longitude": 4.4261101
+  },
   "areaServed": {
     "@type": "City",
     "name": "Antwerpen"
@@ -72,7 +77,7 @@
 <div class="topbar">
   <div class="container">
     <span>Boomgaardstraat 145A, 2018 Antwerpen</span>
-    <span class="topbar__spacer"><span class="tbd">telefoonnummer volgt</span></span>
+    <span class="topbar__spacer"><span class="tbd" data-field="telefoon">telefoonnummer volgt</span></span>
     <a href="mailto:info@rdmaccountants.be">info@rdmaccountants.be</a>
   </div>
 </div>
@@ -97,7 +102,7 @@
     <nav class="nav" id="nav" aria-label="Hoofdnavigatie">
       <button class="nav-close" type="button">Sluiten</button>
       <div class="nav__contact">
-        <span class="tbd">telefoonnummer volgt</span>
+        <span class="tbd" data-field="telefoon">telefoonnummer volgt</span>
         <a href="mailto:info@rdmaccountants.be">info@rdmaccountants.be</a>
       </div>
       <a href="index.html">Home</a>
@@ -117,7 +122,7 @@
       <div class="span-left stagger" data-stagger>
         <h1>Spreek iemand.</h1>
         <p class="lead mt-4">Je belt je eigen accountant, niet een algemeen nummer. Tijdens de kantooruren nemen we op. Daarbuiten mag je ons mailen of appen — dringend is dringend.</p>
-        <p class="small muted mt-3"><span class="demo-flag">Nog te bevestigen door RDM: welke bereikbaarheid wordt effectief beloofd, en binnen welke termijn. Publiceer geen onbegrensde 24/7-belofte.</span></p>
+        <p class="small muted mt-3"><span class="demo-flag" data-note="contact_bereikbaarheid">Nog te bevestigen door RDM: welke bereikbaarheid wordt effectief beloofd, en binnen welke termijn. Publiceer geen onbegrensde 24/7-belofte.</span></p>
       </div>
     </div>
   </section>
@@ -128,7 +133,7 @@
         <dl class="rows">
           <div>
             <dt>Telefoon</dt>
-            <dd><span class="tbd">telefoonnummer nog aan te leveren</span></dd>
+            <dd><span class="tbd" data-field="telefoon">telefoonnummer nog aan te leveren</span></dd>
           </div>
           <div>
             <dt>Mail</dt>
@@ -136,7 +141,7 @@
           </div>
           <div>
             <dt>WhatsApp</dt>
-            <dd><span class="tbd">nog te bevestigen of dit wordt aangeboden</span></dd>
+            <dd><span class="tbd" data-field="whatsapp">nog te bevestigen of dit wordt aangeboden</span></dd>
           </div>
           <div>
             <dt>Kantoor</dt>
@@ -144,7 +149,7 @@
           </div>
           <div>
             <dt>Openingsuren</dt>
-            <dd><span class="tbd">nog aan te leveren</span></dd>
+            <dd><span class="tbd" data-field="openingsuren">nog aan te leveren</span></dd>
           </div>
         </dl>
       </div>
@@ -207,7 +212,7 @@
 
           <div id="contact-confirmation" hidden tabindex="-1">
             <h3>We hebben je bericht.</h3>
-            <p class="mt-2">Je hoort van ons <span class="tbd">binnen welke termijn</span>. Wil je sneller antwoord, bel dan <span class="tbd">telefoonnummer volgt</span>.</p>
+            <p class="mt-2">Je hoort van ons <span class="tbd" data-field="reactietermijn">binnen welke termijn</span>. Wil je sneller antwoord, bel dan <span class="tbd" data-field="telefoon">telefoonnummer volgt</span>.</p>
             <p class="small muted mt-3">Noem hier nooit een termijn die het kantoor niet haalt. Dat cijfer is de belofte waarop de hele site rust.</p>
           </div>
         </div>
@@ -239,7 +244,7 @@
         </span>
         <p>Papierloos werken, zodat er tijd overblijft voor jou.</p>
         <p class="mt-3">Boomgaardstraat 145A<br>2018 Antwerpen</p>
-        <p class="mt-2"><span class="tbd">telefoonnummer volgt</span><br>
+        <p class="mt-2"><span class="tbd" data-field="telefoon">telefoonnummer volgt</span><br>
           <a href="mailto:info@rdmaccountants.be">info@rdmaccountants.be</a></p>
       </div>
 

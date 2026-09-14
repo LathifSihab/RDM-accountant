@@ -48,10 +48,11 @@ def warn(msg: str) -> None:
 for p in html_files():
     s = p.read_text(encoding="utf-8")
 
-    for m in re.finditer(r'<span class="tbd">(.*?)</span>', s, re.S):
+    # NB: must tolerate attributes. The placeholders carry data-field keys.
+    for m in re.finditer(r'<span class="tbd"[^>]*>(.*?)</span>', s, re.S):
         block(f'unresolved [TBD]: "{m.group(1).strip()[:80]}"', p.name)
 
-    for m in re.finditer(r'<span class="demo-flag">(.*?)</span>', s, re.S):
+    for m in re.finditer(r'<span class="demo-flag"[^>]*>(.*?)</span>', s, re.S):
         block(f'demo notice on the page: "{m.group(1).strip()[:80]}"', p.name)
 
     if "[TBD" in s or "TBD]" in s:

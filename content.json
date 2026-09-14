@@ -1,0 +1,272 @@
+{
+  "_lees_dit": [
+    "Vul hieronder bij 'waarde' in. Laat null staan wat je nog niet weet.",
+    "Daarna: python tools/apply_content.py   (vult alles in op elke pagina)",
+    "Daarna: bash tools/check.sh             (zegt wat er nog ontbreekt)",
+    "type 'html' mag opgemaakte tekst bevatten, bv. <p>...</p> of <li>...</li>."
+  ],
+  "telefoon": {
+    "vraag": "Het telefoonnummer zoals het op de site moet staan. Het belangrijkste ontbrekende gegeven: de hele site belooft bereikbaarheid.",
+    "voorbeeld": "+32 3 123 45 67",
+    "type": "telefoon",
+    "waarde": null
+  },
+  "reactietermijn": {
+    "vraag": "Binnen welke termijn krijgt iemand antwoord? Noem nooit een termijn die het kantoor niet haalt.",
+    "voorbeeld": "binnen één werkdag",
+    "type": "tekst",
+    "waarde": null
+  },
+  "openingsuren": {
+    "vraag": "Openingsuren van het kantoor.",
+    "voorbeeld": "maandag tot vrijdag, 9 tot 17 uur",
+    "type": "tekst",
+    "waarde": null
+  },
+  "whatsapp": {
+    "vraag": "Bieden jullie WhatsApp aan? Zo ja het nummer, zo nee zet 'niet aangeboden'.",
+    "voorbeeld": "+32 470 12 34 56",
+    "type": "tekst",
+    "waarde": null
+  },
+  "bereikbaarheid": {
+    "vraag": "De bereikbaarheidsbelofte die RDM echt waarmaakt. Publiceer geen onbegrensde 24/7-belofte — zie docs/notes.md §4.",
+    "voorbeeld": "Tijdens de kantooruren nemen we op. Daarbuiten mag je mailen of appen.",
+    "type": "html",
+    "waarde": null
+  },
+  "oprichtingsjaar": {
+    "vraag": "In welk jaar is RDM Accountants opgericht?",
+    "voorbeeld": "2019",
+    "type": "tekst",
+    "waarde": null
+  },
+  "oprichtingsverhaal": {
+    "vraag": "Drie alinea's: waarom het kantoor er kwam, wat jullie fout vonden aan hoe boekhouding meestal loopt, en wat jullie daarom anders doen. Eerste persoon meervoud, geen brochuretaal.",
+    "voorbeeld": "<p>...</p><p>...</p>",
+    "type": "html",
+    "waarde": null
+  },
+  "duurzaamheid_extra": {
+    "vraag": "Wat doet RDM naast papierloos werken? Groene stroom, woon-werkverkeer, hosting, afvalbeleid. Alleen opnemen wat klopt.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "verzekering": {
+    "vraag": "Beroepsaansprakelijkheidsverzekering: verzekeraar en polisnummer.",
+    "voorbeeld": "AG Insurance, polis 1234567",
+    "type": "tekst",
+    "waarde": null
+  },
+  "extra_diensten": {
+    "vraag": "Bieden jullie loonadministratie, juridisch advies of duurzaamheidsrapportering aan? Zo nee, zet 'niet van toepassing'.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "papier_onderbouwing": {
+    "vraag": "Waarop is het aantal niet-afgedrukte vellen gebaseerd? Zonder onderbouwing halen we dit blok van de homepage.",
+    "voorbeeld": "een geschatte 1.200 vellen per dossier per jaar",
+    "type": "tekst",
+    "waarde": null
+  },
+  "openbaar_vervoer": {
+    "vraag": "Dichtstbijzijnde halte en lijnnummers.",
+    "voorbeeld": "tram 9 en 11, halte Boomgaard",
+    "type": "tekst",
+    "waarde": null
+  },
+  "parkeren": {
+    "vraag": "Parkeerinfo: betalend straatparkeren, blauwe zone, of een parking in de buurt.",
+    "voorbeeld": "betalend straatparkeren, of Parking Berchem op 5 minuten",
+    "type": "tekst",
+    "waarde": null
+  },
+  "juridisch_bijgewerkt": {
+    "vraag": "Datum waarop de juridische teksten zijn nagekeken en goedgekeurd. Pas invullen ná de review.",
+    "voorbeeld": "1 oktober 2026",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_1_naam": {
+    "vraag": "Teamlid 1: naam.",
+    "voorbeeld": "Jan Janssens",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_1_functie": {
+    "vraag": "Teamlid 1: functie.",
+    "voorbeeld": "Gecertificeerd accountant",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_1_rol": {
+    "vraag": "Teamlid 1: één zin over wat deze persoon opvolgt.",
+    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_1_mail": {
+    "vraag": "Teamlid 1: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
+    "voorbeeld": "jan@rdmaccountants.be",
+    "type": "mail",
+    "waarde": null
+  },
+  "team_2_naam": {
+    "vraag": "Teamlid 2: naam.",
+    "voorbeeld": "Jan Janssens",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_2_functie": {
+    "vraag": "Teamlid 2: functie.",
+    "voorbeeld": "Gecertificeerd accountant",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_2_rol": {
+    "vraag": "Teamlid 2: één zin over wat deze persoon opvolgt.",
+    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_2_mail": {
+    "vraag": "Teamlid 2: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
+    "voorbeeld": "jan@rdmaccountants.be",
+    "type": "mail",
+    "waarde": null
+  },
+  "team_3_naam": {
+    "vraag": "Teamlid 3: naam.",
+    "voorbeeld": "Jan Janssens",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_3_functie": {
+    "vraag": "Teamlid 3: functie.",
+    "voorbeeld": "Gecertificeerd accountant",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_3_rol": {
+    "vraag": "Teamlid 3: één zin over wat deze persoon opvolgt.",
+    "voorbeeld": "Volgt de dossiers van starters en eenmanszaken op.",
+    "type": "tekst",
+    "waarde": null
+  },
+  "team_3_mail": {
+    "vraag": "Teamlid 3: direct mailadres. Een gedeeld info-adres haalt de bereikbaarheidsbelofte onderuit.",
+    "voorbeeld": "jan@rdmaccountants.be",
+    "type": "mail",
+    "waarde": null
+  },
+  "av_opdrachtbrief": {
+    "vraag": "Algemene voorwaarden: verhouding tot de wettelijk verplichte opdrachtbrief. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_verplichtingen": {
+    "vraag": "Algemene voorwaarden: wederzijdse verplichtingen, aanlevertermijnen, gevolgen van laattijdig aanleveren. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_tarieven": {
+    "vraag": "Algemene voorwaarden: maandtarief, wat erbuiten valt, indexering, betaaltermijn, gevolgen van niet-betaling. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_beeindiging": {
+    "vraag": "Algemene voorwaarden: opzegtermijn en overdracht van het dossier bij vertrek. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_aansprakelijkheid": {
+    "vraag": "Algemene voorwaarden: beperking van aansprakelijkheid en de beroepsaansprakelijkheidsverzekering. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_witwas": {
+    "vraag": "Algemene voorwaarden: identificatieplicht en meldingsplicht onder de antiwitwaswetgeving. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "av_geschillen": {
+    "vraag": "Algemene voorwaarden: klachtenprocedure, ITAA-tuchtprocedure, bevoegde rechtbank en toepasselijk recht. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_dpo": {
+    "vraag": "Privacybeleid: is er een DPO aangesteld? Zo ja, contactgegevens. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_klantgegevens": {
+    "vraag": "Privacybeleid: welke gegevens van klanten worden verwerkt. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_grondslag": {
+    "vraag": "Privacybeleid: op welke wettelijke verplichtingen de verwerking steunt. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_bewaartermijn": {
+    "vraag": "Privacybeleid: hoe lang gegevens bewaard worden. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_verwerkers": {
+    "vraag": "Privacybeleid: met wie gegevens gedeeld worden, en of er gegevens buiten de EER gaan. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "pb_beveiliging": {
+    "vraag": "Privacybeleid: welke beveiligingsmaatregelen genomen zijn. Laat dit door een jurist opstellen.",
+    "voorbeeld": "",
+    "type": "html",
+    "waarde": null
+  },
+  "_notities": {
+    "av_geraamte": {
+      "vraag": "Zijn de algemene voorwaarden door een jurist opgesteld of nagekeken?",
+      "opgelost": false
+    },
+    "privacy_jurist": {
+      "vraag": "Is het privacybeleid door een jurist nagekeken?",
+      "opgelost": false
+    },
+    "contact_bereikbaarheid": {
+      "vraag": "Is de bereikbaarheidsbelofte door RDM vastgelegd?",
+      "opgelost": false
+    },
+    "cookie_geldigheid": {
+      "vraag": "Bevestigd dat er geen analytics of externe scripts zijn toegevoegd?",
+      "opgelost": false
+    },
+    "papier_demo": {
+      "vraag": "Is het papiercijfer onderbouwd? Zo nee, verwijder blok 3 van index.html.",
+      "opgelost": false
+    },
+    "oprichtingsverhaal_demo": {
+      "vraag": "Is het oprichtingsverhaal aangeleverd?",
+      "opgelost": false
+    },
+    "tarief_demo": {
+      "vraag": "Staat PRICES_CONFIRMED in assets/js/simulator.js op true? Dan verdwijnt deze badge vanzelf.",
+      "opgelost": false
+    }
+  }
+}
