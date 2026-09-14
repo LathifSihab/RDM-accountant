@@ -148,6 +148,14 @@ for p in html_files():
         block("hard-coded iframe - third-party frames must be click-to-load", p.name)
 
 
+# --- 5b. CSS: a reused @keyframes name silently replaces the earlier animation.
+# "draw" is deliberately redefined inside a mobile @media block, so it is allowed.
+css_text = (ROOT / "assets/css/style.css").read_text(encoding="utf-8")
+kf = re.findall(r"@keyframes\s+([\w-]+)", css_text)
+for name in sorted({n for n in kf if kf.count(n) > 1} - {"draw"}):
+    block(f"@keyframes name '{name}' is defined more than once - the later one silently replaces the earlier animation")
+
+
 # --- 6. Legal pages -----------------------------------------------------------
 
 for name in ["privacybeleid.html", "cookiebeleid.html",
