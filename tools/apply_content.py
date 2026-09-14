@@ -72,6 +72,20 @@ for page in sorted(SITE.glob("*.html")):
         if n:
             applied["note:" + key] = applied.get("note:" + key, 0) + n
 
+    # --- initials, derived from whatever name was supplied -----------------
+    def sub_initials(m):
+        key = m.group(1)
+        spec = fields.get(key)
+        if not spec or spec.get("waarde") in (None, ""):
+            return m.group(0)
+        parts = [w for w in str(spec["waarde"]).split() if w[:1].isalpha()]
+        letters = (parts[0][:1] + parts[-1][:1]) if len(parts) > 1 else parts[0][:1]
+        applied["initials"] = applied.get("initials", 0) + 1
+        return m.group(0).replace(">&mdash;<", ">" + letters.upper() + "<")
+
+    s = re.sub(r'<span class="people__initials" data-initials="([^"]+)"[^>]*>&mdash;</span>',
+               sub_initials, s)
+
     # --- telephone also belongs in the structured data ---------------------
     phone = fields.get("telefoon", {}).get("waarde")
     if phone:

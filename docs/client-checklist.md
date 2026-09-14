@@ -75,7 +75,11 @@ Per persoon, voor de pagina Over ons:
 | Functie | | | |
 | Eén zin: wat volgt deze persoon op? | | | |
 | Direct mailadres | | | |
-| Foto | | | |
+
+Foto's zijn **niet** nodig om live te gaan. We tonen nu de initialen van elke
+persoon, gezet in het lettertype van het logo. Sturen jullie later toch
+portretfoto's, dan zetten we die er zonder verdere aanpassing in. Stockfoto's
+gebruiken we niet.
 
 Dat directe mailadres is geen detail. Eén gedeeld `info@` voor iedereen haalt
 precies de belofte onderuit waar de rest van de site op steunt.
@@ -94,14 +98,17 @@ precies de belofte onderuit waar de rest van de site op steunt.
 
 ## 6. Duurzaamheid, concreet
 
-Op de homepage staat een teller met het aantal vellen papier dat jullie niet
-hebben afgedrukt. Dat cijfer moet ergens op steunen — bijvoorbeeld een
-geschatte hoeveelheid per dossier per jaar, met die aanname erbij vermeld.
+Er stond een teller op de homepage met het aantal vellen papier dat jullie niet
+hebben afgedrukt. **Die hebben we weggehaald**, omdat het cijfer verzonnen was
+en we dat niet op de site van een gecertificeerd accountant laten staan.
+
+Kunnen jullie het onderbouwen — bijvoorbeeld een geschatte hoeveelheid per
+dossier per jaar — dan zetten we het blok terug.
 
 > **Waarop baseren we dat cijfer?** ______________________
 
-Lukt dat niet, dan halen we het blok weg. Een duurzaamheidscijfer dat je niet
-kan uitleggen is minder waard dan de ruimte die het inneemt.
+Kan het niet onderbouwd worden, dan blijft het weg. Een duurzaamheidscijfer dat
+je niet kan uitleggen is minder waard dan de ruimte die het inneemt.
 
 > **Doen jullie nog iets anders dan papierloos werken?** Groene stroom,
 > woon-werkverkeer, hosting, afvalbeleid. Alleen wat echt klopt: ____________

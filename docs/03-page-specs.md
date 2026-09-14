@@ -40,6 +40,11 @@ This is the only place on the site where the values are explained. Everywhere el
 
 ## Block 3 — The paper counter
 
+> **Not built (2026-09-14).** No defensible basis for the figure was supplied,
+> and this section already says to drop the block rather than fudge it. The
+> homepage therefore ships six blocks, not seven. The specification below stands
+> unchanged: supply a basis and the block goes back in as written.
+
 A single number, set large in the display serif, counting sheets of paper not printed since RDM was founded.
 
 *`[TBD]` vellen papier die we niet hebben afgedrukt sinds `[TBD founding year]`.*
@@ -186,9 +191,16 @@ A working structure: why the practice was started, what the founders found wrong
 
 ## Block 2 — The team
 
-`[TBD: names, roles, photographs]`
+`[TBD: names, roles]`
 
-Per person: photograph, name, role, one line about what they handle, direct mail address. The direct mail address is the point — it proves the reachability claim in a way a paragraph cannot. A generic `info@` for everyone undercuts the whole positioning.
+> **Built without photographs (2026-09-14).** None were supplied, and `04` bans
+> stock. The block is a ruled list — matching the services and werkwijze blocks —
+> with each person's initials set in the display serif in place of a portrait,
+> which `04` sanctions ("real photographs or initials only"). Initials are
+> derived automatically from the name in `content.json`. When real portraits
+> arrive they drop into the same list; nothing else changes.
+
+Per person: initials or photograph, name, role, one line about what they handle, direct mail address. The direct mail address is the point — it proves the reachability claim in a way a paragraph cannot. A generic `info@` for everyone undercuts the whole positioning.
 
 ## Block 3 — Waar we voor staan
 

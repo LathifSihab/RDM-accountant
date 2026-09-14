@@ -66,7 +66,7 @@
     "waarde": null
   },
   "papier_onderbouwing": {
-    "vraag": "Waarop is het aantal niet-afgedrukte vellen gebaseerd? Zonder onderbouwing halen we dit blok van de homepage.",
+    "vraag": "Waarop is het aantal niet-afgedrukte vellen gebaseerd? Het blok staat NU NIET op de site — het is verwijderd omdat het cijfer verzonnen was. Lever je een onderbouwing aan, dan bouwen we het opnieuw (specificatie: docs/03-page-specs.md, Home blok 3).",
     "voorbeeld": "een geschatte 1.200 vellen per dossier per jaar",
     "type": "tekst",
     "waarde": null
@@ -90,7 +90,7 @@
     "waarde": null
   },
   "team_1_naam": {
-    "vraag": "Teamlid 1: naam.",
+    "vraag": "Teamlid 1: naam. De initialen op de site worden hieruit afgeleid.",
     "voorbeeld": "Jan Janssens",
     "type": "tekst",
     "waarde": null
@@ -114,7 +114,7 @@
     "waarde": null
   },
   "team_2_naam": {
-    "vraag": "Teamlid 2: naam.",
+    "vraag": "Teamlid 2: naam. De initialen op de site worden hieruit afgeleid.",
     "voorbeeld": "Jan Janssens",
     "type": "tekst",
     "waarde": null
@@ -138,7 +138,7 @@
     "waarde": null
   },
   "team_3_naam": {
-    "vraag": "Teamlid 3: naam.",
+    "vraag": "Teamlid 3: naam. De initialen op de site worden hieruit afgeleid.",
     "voorbeeld": "Jan Janssens",
     "type": "tekst",
     "waarde": null
@@ -254,10 +254,6 @@
     },
     "cookie_geldigheid": {
       "vraag": "Bevestigd dat er geen analytics of externe scripts zijn toegevoegd?",
-      "opgelost": false
-    },
-    "papier_demo": {
-      "vraag": "Is het papiercijfer onderbouwd? Zo nee, verwijder blok 3 van index.html.",
       "opgelost": false
     },
     "oprichtingsverhaal_demo": {

@@ -462,16 +462,7 @@ html:not(.js) .stagger > * { opacity: 1; transform: none; }
   .chain__rule { width: 48px; margin: var(--s2) 0; transform: none; }
 }
 
-/* --- Counter -------------------------------------------------------------- */
-
-.counter__figure {
-  font-family: var(--display);
-  font-size: clamp(56px, 11vw, 116px);
-  line-height: 1;
-  color: var(--forest);
-  font-variant-numeric: lining-nums tabular-nums;
-}
-.counter__caption { font-size: var(--fs-lead); margin-top: var(--s3); }
+/* --- Demo / pending-data notice ------------------------------------------- */
 
 .demo-flag {
   display: inline-block;
@@ -584,24 +575,31 @@ html:not(.js) .quote p { opacity: 1; transform: none; }
 }
 
 /* --- Team ----------------------------------------------------------------- */
+/* No photographs were supplied, and 04 bans stock. Initials set in the
+   display serif are the sanctioned alternative, and the ruled list matches
+   the services and werkwijze blocks. Swap the initials for real portraits
+   when they arrive; nothing else has to change. */
 
-.team {
+.people > li {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: var(--gutter);
+  grid-template-columns: 72px 1fr;
+  gap: var(--s3);
+  border-top: 1px solid var(--moss);
+  padding-block: var(--s5);
 }
-.team__portrait {
-  aspect-ratio: 4 / 5;
-  background: var(--moss);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--forest);
+.people > li:last-child { border-bottom: 1px solid var(--moss); }
+
+.people__initials {
   font-family: var(--display);
-  font-size: 25px;
-  text-align: center;
-  padding: var(--s3);
-  margin-bottom: var(--s3);
+  font-size: 39px;
+  line-height: 1;
+  color: var(--fern);
+  font-variant-numeric: lining-nums;
+}
+
+@media (max-width: 700px) {
+  .people > li { grid-template-columns: 1fr; gap: var(--s1); padding-block: var(--s4); }
+  .people__initials { font-size: 28px; }
 }
 
 /* --- Forms ---------------------------------------------------------------- */
