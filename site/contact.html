@@ -27,7 +27,7 @@
 
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="assets/css/style.css?v=28aa9ac4">
+<link rel="stylesheet" href="assets/css/style.css?v=0466deaf">
 
 <script type="application/ld+json">
 {
@@ -106,53 +106,51 @@
 
 <main id="main">
 
-  <!-- Block 1 — Reach us. Details first, form second. -->
-  <section class="hero">
-    <div class="container grid">
-      <div class="span-left stagger" data-stagger>
-        <h1>Spreek iemand.</h1>
-        <p class="lead mt-4">Je belt je eigen accountant, niet een algemeen nummer. Tijdens de kantooruren nemen we op. Daarbuiten mag je ons mailen of appen — dringend is dringend.</p>
+  <section class="hero-x">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">Spreek <mark class="hl">iemand</mark>.</h1>
+        <p class="hero-x__sub">Je belt je eigen accountant, niet een algemeen nummer. Tijdens de kantooruren nemen we op. Daarbuiten mag je ons mailen of appen &mdash; dringend is dringend.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#bericht-sectie">Stuur een bericht</a>
+          <a class="btn btn--secondary" href="tarief.html">Eerst je tarief berekenen</a>
+        </div>
         <p class="small muted mt-3"><span class="demo-flag" data-note="contact_bereikbaarheid">Nog te bevestigen door RDM: welke bereikbaarheid wordt effectief beloofd, en binnen welke termijn. Publiceer geen onbegrensde 24/7-belofte.</span></p>
       </div>
-    </div>
-  </section>
-
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-right">
-        <dl class="rows">
-          <div>
-            <dt>Telefoon</dt>
-            <dd><span class="tbd" data-field="telefoon">telefoonnummer nog aan te leveren</span></dd>
+      <div class="ill-stage" aria-hidden="true">
+        <div class="msg-app float">
+          <div class="msg-app__head"><span class="msg-app__avatar"><svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0F3D2E"/><path d="M47.01 24.02A17 17 0 1 1 32.00 15.00" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/><circle cx="39.72" cy="16.85" r="6.24" fill="#22C55E"/></svg></span><span><b>RDM Accountants</b><em><span class="ill-live-dot"></span>online</em></span></div>
+          <div class="msg-app__body">
+            <div class="ill-bubble ill-bubble--them">Hoi! Ik start als zelfstandige. Kunnen we even bellen?</div>
+            <div class="ill-bubble ill-bubble--us">Zeker. Wanneer past het jou?</div>
+            <div class="ill-typing"><span></span><span></span><span></span></div>
           </div>
-          <div>
-            <dt>Mail</dt>
-            <dd><a href="mailto:info@rdmaccountants.be">info@rdmaccountants.be</a></dd>
-          </div>
-          <div>
-            <dt>WhatsApp</dt>
-            <dd><span class="tbd" data-field="whatsapp">nog te bevestigen of dit wordt aangeboden</span></dd>
-          </div>
-          <div>
-            <dt>Kantoor</dt>
-            <dd>Boomgaardstraat 145A, 2018 Antwerpen</dd>
-          </div>
-          <div>
-            <dt>Openingsuren</dt>
-            <dd><span class="tbd" data-field="openingsuren">nog aan te leveren</span></dd>
-          </div>
-        </dl>
+          <div class="msg-app__input"><span>Typ je bericht&hellip;</span><span class="msg-app__send"><svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-3-6z"/></svg></span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Block 2 — Form -->
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-left">
-        <h2 class="mb-3">Of laat een bericht achter</h2>
-        <p class="mb-5">Vijf velden. We hebben niet meer nodig om je terug te bellen.</p>
+  <section class="section-sm">
+    <div class="container">
+      <h2 class="visually-hidden">Contactgegevens</h2>
+      <div class="methods">
+        <article class="card method" data-reveal><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><h3>Bellen</h3><p><span class="tbd" data-field="telefoon">telefoonnummer nog aan te leveren</span></p></article>
+        <article class="card method" data-reveal><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><h3>Mailen</h3><p><a href="mailto:info@rdmaccountants.be">info@<wbr>rdmaccountants.be</a></p></article>
+        <article class="card method" data-reveal><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-12 7l-4 1 1-4a8 8 0 1 1 15-4z"/></svg></span><h3>WhatsApp</h3><p><span class="tbd" data-field="whatsapp">nog te bevestigen of dit wordt aangeboden</span></p></article>
+        <article class="card method" data-reveal><span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><h3>Kantoor</h3><p>Boomgaardstraat 145A<br>2018 Antwerpen</p><p class="small muted">Openingsuren: <span class="tbd" data-field="openingsuren">nog aan te leveren</span></p></article>
+      </div>
+    </div>
+  </section>
 
+  <section class="section band-tint" id="bericht-sectie">
+    <div class="container form-wrap">
+      <div data-reveal>
+        <h2 class="h-sec">Of laat een <mark class="hl">bericht</mark> achter</h2>
+        <p class="lead-l">Vijf velden. We hebben niet meer nodig om je terug te bellen.</p>
+        <ul class="checks checks--col"><li>Kies waarover het gaat</li><li>Wij nemen contact op</li><li>Vrijblijvend</li></ul>
+      </div>
+      <div data-reveal>
         <div class="surface">
           <form id="contact-form" data-contact-form name="contact" method="POST"
                 action="bedankt.html" data-netlify="true" netlify-honeypot="bot-field" novalidate>
@@ -206,10 +204,18 @@
             <p class="small muted mt-3">Noem hier nooit een termijn die het kantoor niet haalt. Dat cijfer is de belofte waarop de hele site rust.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="btn-row mt-5">
-          <a class="btn btn--secondary" href="tarief.html">Bereken je tarief</a>
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner" data-reveal>
+        <div>
+          <h2 class="h-sec">Liever eerst weten wat het <mark class="hl">kost</mark>?</h2>
+          <ul class="checks checks--row"><li>Drie vragen</li><li>&Eacute;&eacute;n richtprijs</li><li>Zonder je gegevens achter te laten</li></ul>
         </div>
+        <a class="btn btn--primary btn--lg" href="tarief.html">Bereken je tarief</a>
       </div>
     </div>
   </section>
@@ -267,6 +273,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=661475e4" defer></script>
+<script src="assets/js/main.js?v=253925b6" defer></script>
 </body>
 </html>

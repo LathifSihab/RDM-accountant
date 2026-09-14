@@ -27,7 +27,7 @@
 
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="assets/css/style.css?v=28aa9ac4">
+<link rel="stylesheet" href="assets/css/style.css?v=0466deaf">
 
 <script type="application/ld+json">
 {
@@ -105,11 +105,22 @@
 </header>
 
 <main id="main" class="sim" data-sim-root>
-  <div class="container">
-    <!-- No marketing above the tool. The visitor came to do one thing. -->
-    <h1>Bereken je tarief</h1>
-    <p class="lead mt-3">Drie stappen. Je krijgt meteen een richtprijs, zonder je gegevens achter te laten.</p>
-  </div>
+  <section class="hero-x hero-x--compact">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">Bereken je <mark class="hl">tarief</mark></h1>
+        <p class="hero-x__sub">Drie stappen. Je krijgt meteen een richtprijs, zonder je gegevens achter te laten.</p>
+        <p class="trust"><span>3 stappen</span><span>Ongeveer 2 minuten</span><span>Vrijblijvend</span></p>
+      </div>
+      <div class="ill-stage ill-stage--sm" aria-hidden="true">
+        <div class="calc-mini float">
+          <div class="calc-mini__screen"><em>Je richtprijs</em><b>&euro; <span class="calc-mini__q">?</span></b><em>per maand</em></div>
+          <div class="calc-mini__keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="ill-chip ill-chip--c float float--late"><span class="ill-live-dot"></span><span>Live berekend</span></div>
+      </div>
+    </div>
+  </section>
 
   <noscript>
     <div class="container mt-6">
@@ -397,7 +408,7 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=661475e4" defer></script>
+<script src="assets/js/main.js?v=253925b6" defer></script>
 <script src="assets/js/simulator.js?v=db207f3d" defer></script>
 </body>
 </html>

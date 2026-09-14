@@ -27,7 +27,7 @@
 
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="assets/css/style.css?v=28aa9ac4">
+<link rel="stylesheet" href="assets/css/style.css?v=0466deaf">
 
 <script type="application/ld+json">
 {
@@ -106,104 +106,143 @@
 
 <main id="main">
 
-  <!-- Block 1 — Intro -->
-  <section class="hero">
-    <div class="container grid">
-      <div class="span-left stagger" data-stagger>
-        <h1>Alles wat je boekhouding nodig heeft, op één plek.</h1>
-        <p class="lead mt-4">Je hebt geen lijst met losse diensten nodig. Je hebt iemand nodig die je dossier van begin tot eind opvolgt. Dat doen we.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Block 2 — The services in full -->
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-right">
-        <h2 class="visually-hidden">Onze diensten</h2>
-        <ul class="list-rules">
-          <li>
-            <h3>Boekhouding</h3>
-            <p>Je aankoop- en verkoopfacturen, je bankverrichtingen, je afschrijvingen. Wij verwerken alles digitaal en houden je cijfers actueel — niet één keer per kwartaal, maar doorlopend.</p>
-            <p class="included"><strong>Inbegrepen:</strong> verwerking aankoop- en verkoopfacturen · bankkoppeling · btw-aangifte · jaarrekening · neerlegging bij de Nationale Bank</p>
-          </li>
-          <li>
-            <h3>Fiscaliteit</h3>
-            <p>Aangiftes op tijd en correct, en advies voordat je een beslissing neemt in plaats van erna.</p>
-            <p class="included"><strong>Inbegrepen:</strong> btw-aangiftes · personenbelasting · vennootschapsbelasting · UBO-registratie, de wettelijke registratie van wie achter je vennootschap zit · fiscale optimalisatie</p>
-          </li>
-          <li>
-            <h3>Advies</h3>
-            <p>Zien we iets in je cijfers dat je geld kost of oplevert, dan nemen we contact op. Dat zit in je maandtarief, je krijgt er geen aparte factuur voor.</p>
-          </li>
-          <li>
-            <h3>Starters</h3>
-            <p>Een onderneming opstarten is vooral veel niet weten wat je moet weten. We lopen het samen door: ondernemingsvorm, ondernemingsnummer, btw-activering, je eerste factuur.</p>
-          </li>
+  <section class="hero-x">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">Alles wat je boekhouding nodig heeft, op <mark class="hl">&eacute;&eacute;n plek</mark>.</h1>
+        <p class="hero-x__sub">Je hebt geen lijst met losse diensten nodig. Je hebt iemand nodig die je dossier van begin tot eind opvolgt. Dat doen we.</p>
+        <ul class="checks">
+          <li>Boekhouding, doorlopend</li>
+          <li>Btw en belastingen</li>
+          <li>Advies inbegrepen</li>
+          <li>Starters begeleid</li>
         </ul>
-        <p class="small muted mt-4"><span class="tbd" data-field="extra_diensten">Nog te bevestigen: bieden we ook loonadministratie, juridisch advies of duurzaamheidsrapportering aan? Niets van dit alles is nu aangenomen.</span></p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tarief.html">Bereken je maandtarief</a>
+          <a class="btn btn--secondary" href="#werkwijze">Zo werken we</a>
+        </div>
+      </div>
+      <div class="ill-stage" aria-hidden="true">
+        <div class="svc-panel float">
+          <div class="svc-panel__head"><b>Jouw dossier</b><span class="ill-pill">alles inbegrepen</span></div>
+          <div class="svc-row"><span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg></span><span class="svc-row__txt"><b>Boekhouding</b><em>facturen, bank, jaarrekening</em></span><span class="toggle"><i></i></span></div>
+          <div class="svc-row"><span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 14l6-6"/><circle cx="9.5" cy="8.5" r="1"/><circle cx="14.5" cy="13.5" r="1"/></svg></span><span class="svc-row__txt"><b>Fiscaliteit</b><em>btw en aangiftes</em></span><span class="toggle"><i></i></span></div>
+          <div class="svc-row"><span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span><span class="svc-row__txt"><b>Advies</b><em>wij bellen jou</em></span><span class="toggle"><i></i></span></div>
+          <div class="svc-row"><span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span><span class="svc-row__txt"><b>Starters</b><em>van nul tot eerste factuur</em></span><span class="toggle"><i></i></span></div>
+        </div>
+        <div class="ill-chip ill-chip--a float float--late"><span class="ill-live-dot"></span><span>E&eacute;n maandtarief</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Block 3 — Werkwijze. A genuine sequence, so numbering is earned. -->
+  <section class="section band-tint">
+    <div class="container">
+      <h2 class="h-sec center">Wat we voor je <mark class="hl">doen</mark></h2>
+      <p class="lead-c center">Vier diensten, &eacute;&eacute;n aanspreekpunt. Wat het kost, zie je in de rekentool.</p>
+      <div class="cards cards--2">
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5M9 7h6M9 11h6"/></svg></span>
+          <h3>Boekhouding</h3>
+          <p>Je aankoop- en verkoopfacturen, je bankverrichtingen, je afschrijvingen. Wij verwerken alles digitaal en houden je cijfers actueel &mdash; niet &eacute;&eacute;n keer per kwartaal, maar doorlopend.</p>
+          <ul class="tags"><li>Aankoop- en verkoopfacturen</li><li>Bankkoppeling</li><li>Btw-aangifte</li><li>Jaarrekening</li><li>Neerlegging bij de Nationale Bank</li></ul>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 14l6-6"/><circle cx="9.5" cy="8.5" r="1"/><circle cx="14.5" cy="13.5" r="1"/></svg></span>
+          <h3>Fiscaliteit</h3>
+          <p>Aangiftes op tijd en correct, en advies voordat je een beslissing neemt in plaats van erna. Ook de UBO-registratie: de wettelijke registratie van wie achter je vennootschap zit.</p>
+          <ul class="tags"><li>Btw-aangiftes</li><li>Personenbelasting</li><li>Vennootschapsbelasting</li><li>UBO-registratie</li><li>Fiscale optimalisatie</li></ul>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span>
+          <h3>Advies</h3>
+          <p>Zien we iets in je cijfers dat je geld kost of oplevert, dan nemen we contact op. Dat zit in je maandtarief, je krijgt er geen aparte factuur voor.</p>
+          <ul class="tags"><li>Wij bellen jou</li><li>Geen aparte factuur</li></ul>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span>
+          <h3>Starters</h3>
+          <p>Een onderneming opstarten is vooral veel niet weten wat je moet weten. We lopen het samen door.</p>
+          <ul class="tags"><li>Ondernemingsvorm</li><li>Ondernemingsnummer</li><li>Btw-activering</li><li>Je eerste factuur</li></ul>
+        </article>
+      </div>
+      <div class="center mt-5"><p class="small muted mt-4"><span class="tbd" data-field="extra_diensten">Nog te bevestigen: bieden we ook loonadministratie, juridisch advies of duurzaamheidsrapportering aan? Niets van dit alles is nu aangenomen.</span></p></div>
+    </div>
+  </section>
+
   <section class="section" id="werkwijze">
-    <div class="container grid">
-      <div class="span-left">
-        <h2 class="mb-3">Zo werken we</h2>
-        <p class="lead mb-5">Vier stappen, van het eerste gesprek tot de bespreking van je jaarrekening.</p>
-        <ol class="steps">
-          <li>
-            <span class="steps__n" aria-hidden="true">1</span>
-            <div>
-              <h3>Kennismaking</h3>
-              <p>We beginnen met een gesprek. Op kantoor in Antwerpen of via video, wat jou uitkomt. Je weet daarna precies wat we doen en wat het kost.</p>
-            </div>
-          </li>
-          <li>
-            <span class="steps__n" aria-hidden="true">2</span>
-            <div>
-              <h3>Je documenten, digitaal</h3>
-              <p>Foto van een bonnetje, factuur per mail, of rechtstreeks via Peppol — het Europese netwerk waarlangs facturen automatisch bij ons binnenkomen. Je hoeft niets te verzamelen, te nieten of binnen te brengen.</p>
-            </div>
-          </li>
-          <li>
-            <span class="steps__n" aria-hidden="true">3</span>
-            <div>
-              <h3>Wij verwerken</h3>
-              <p>Je boekhouding loopt mee met je onderneming. Je ziet je cijfers wanneer je wil, niet wanneer het kwartaal afgesloten is.</p>
-            </div>
-          </li>
-          <li>
-            <span class="steps__n" aria-hidden="true">4</span>
-            <div>
-              <h3>We bespreken</h3>
-              <p>Je jaarrekening overlopen we samen. Wat er in staat, wat het betekent, en wat je volgend jaar anders kan doen.</p>
-            </div>
-          </li>
-        </ol>
+    <div class="container">
+      <h2 class="h-sec center">Zo <mark class="hl">werken</mark> we</h2>
+      <p class="lead-c center">Vier stappen, van het eerste gesprek tot de bespreking van je jaarrekening.</p>
+      <ol class="timeline" data-reveal>
+        <li class="tl-step"><span class="tl-step__n">1</span><div class="tl-step__card"><h3>Kennismaking</h3><p>We beginnen met een gesprek. Op kantoor in Antwerpen of via video, wat jou uitkomt. Je weet daarna precies wat we doen en wat het kost.</p></div></li>
+        <li class="tl-step"><span class="tl-step__n">2</span><div class="tl-step__card"><h3>Je documenten, digitaal</h3><p>Foto van een bonnetje, factuur per mail, of rechtstreeks via Peppol &mdash; het Europese netwerk waarlangs facturen automatisch bij ons binnenkomen.</p></div></li>
+        <li class="tl-step"><span class="tl-step__n">3</span><div class="tl-step__card"><h3>Wij verwerken</h3><p>Je boekhouding loopt mee met je onderneming. Je ziet je cijfers wanneer je wil, niet wanneer het kwartaal afgesloten is.</p></div></li>
+        <li class="tl-step"><span class="tl-step__n">4</span><div class="tl-step__card"><h3>We bespreken</h3><p>Je jaarrekening overlopen we samen. Wat er in staat, wat het betekent, en wat je volgend jaar anders kan doen.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section band-tint">
+    <div class="container">
+      <div class="zig" data-reveal>
+        <div class="zig__text">
+          <p class="eyebrow">Overstappen</p>
+          <h3>Al een boekhouder? Overstappen is minder werk dan je denkt.</h3>
+          <p>Je stapt over bij de start van een kwartaal. Jij laat je huidige kantoor weten dat je vertrekt &mdash; dat is &eacute;&eacute;n mail, we sturen je de tekst. De overdracht van je dossier regelen wij onderling.</p>
+          <ul class="checks checks--col mt-4"><li>Start van een kwartaal</li><li>E&eacute;n mail van jou, de tekst van ons</li><li>De overdracht regelen wij</li></ul>
+        </div>
+        <div class="zig__visual ill" aria-hidden="true">
+          <div class="mail-card float">
+            <div class="mail-card__row"><em>Aan</em><span>je huidige boekhouder</span></div>
+            <div class="mail-card__row"><em>Onderwerp</em><span>Overdracht van mijn dossier</span></div>
+            <i></i><i></i><i class="short"></i>
+            <span class="mail-card__sent"><span class="ill-ok"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span>Verstuurd</span>
+          </div>
+          <svg class="mail-arrow" viewBox="0 0 80 40"><path d="M2 30 C 25 30, 30 8, 70 10"/><path d="M62 4l9 6-9 6"/></svg>
+          <div class="mail-to"><span class="mail-to__logo"><svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0F3D2E"/><path d="M47.01 24.02A17 17 0 1 1 32.00 15.00" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/><circle cx="39.72" cy="16.85" r="6.24" fill="#22C55E"/></svg></span><b>RDM</b><em>neemt het over</em></div>
+          <div class="ill-chip ill-chip--b float float--late"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Vanaf volgend kwartaal</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Block 4 — Overstappen -->
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-right">
-        <h2 class="mb-3">Al een boekhouder? Overstappen is minder werk dan je denkt.</h2>
-        <p class="lead">Je stapt over bij de start van een kwartaal. Jij laat je huidige kantoor weten dat je vertrekt — dat is één mail, we sturen je de tekst. De overdracht van je dossier regelen wij onderling.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Block 5 — CTA -->
   <section class="section">
-    <div class="container grid">
-      <div class="span-left">
-        <h2 class="mb-3">Wat betaal je hiervoor?</h2>
-        <p class="lead">Drie vragen, één richtprijs. Je krijgt het cijfer meteen te zien, zonder je gegevens achter te laten.</p>
-        <div class="btn-row mt-5">
-          <a class="btn btn--primary" href="tarief.html">Bereken je tarief</a>
+    <div class="container faq-wrap">
+      <div data-reveal>
+        <h2 class="h-sec">Vragen over onze diensten</h2>
+        <p class="lead-l">Staat je vraag er niet bij? Stel ze gewoon.</p>
+        <a class="btn btn--primary" href="contact.html">Stel je vraag</a>
+      </div>
+      <div class="faq" data-reveal>
+        <details open>
+          <summary>Wat zit er in het maandtarief?</summary>
+          <p>De verwerking van je facturen en bankverrichtingen, je btw-aangiftes en advies wanneer we iets zien in je cijfers. Wat er precies bij jou in zit, zie je aan het einde van de rekentool.</p>
+        </details>
+        <details>
+          <summary>Hoe lever ik mijn documenten aan?</summary>
+          <p>Met een foto van een bonnetje, een factuur per mail of rechtstreeks via Peppol. Je hoeft niets te verzamelen of binnen te brengen.</p>
+        </details>
+        <details>
+          <summary>Begeleiden jullie ook starters?</summary>
+          <p>Ja. We lopen samen je ondernemingsvorm, je ondernemingsnummer, je btw-activering en je eerste factuur door.</p>
+        </details>
+        <details>
+          <summary>Wanneer kan ik overstappen?</summary>
+          <p>Bij de start van een kwartaal. Jij stuurt &eacute;&eacute;n mail naar je huidige kantoor, wij regelen de overdracht.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner" data-reveal>
+        <div>
+          <h2 class="h-sec">Wat betaal je <mark class="hl">hiervoor</mark>?</h2>
+          <ul class="checks checks--row"><li>Drie vragen</li><li>&Eacute;&eacute;n richtprijs</li><li>Zonder je gegevens achter te laten</li></ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="tarief.html">Bereken je tarief</a>
           <a class="btn btn--secondary" href="contact.html">Stel je vraag</a>
         </div>
       </div>
@@ -263,6 +302,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=661475e4" defer></script>
+<script src="assets/js/main.js?v=253925b6" defer></script>
 </body>
 </html>

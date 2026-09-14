@@ -11,6 +11,15 @@
 > Green stays the brand colour. Where this document's editorial rules (Didone,
 > no eyebrows, no highlighted words, radius 0) conflict with v2, v2 wins.
 
+> **v2 motion, 2026-09-15.** The original rule of "two moments of motion" is
+> relaxed for v2. Sections fade up once as they scroll into view, illustrations
+> carry small ambient loops (a floating card, a pulsing "online" dot, typing dots,
+> toggles switching on, a timeline drawing itself), and chart bars grow when their
+> row appears. All of it sits inside `prefers-reduced-motion: no-preference`, and
+> reveals only apply when JavaScript runs, so no visitor can end up with hidden
+> content. Illustrations are HTML and inline SVG with no inline style attributes,
+> because the Content-Security-Policy blocks those.
+
 Derived from the supplied logo: a high-contrast Didone-style serif monogram, R and D above, M centred below, a fine script "Accountants" ruling across the middle, charcoal on a warm off-white. Editorial, quiet, confident. The system extends that rather than replacing it.
 
 ## Colour

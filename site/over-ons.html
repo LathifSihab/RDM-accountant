@@ -27,7 +27,7 @@
 
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="assets/css/style.css?v=28aa9ac4">
+<link rel="stylesheet" href="assets/css/style.css?v=0466deaf">
 
 <script type="application/ld+json">
 {
@@ -106,19 +106,39 @@
 
 <main id="main">
 
-  <!-- Block 1 — Opening -->
-  <section class="hero">
-    <div class="container grid">
-      <div class="span-left stagger" data-stagger>
-        <h1>Je weet wie je belt.</h1>
-        <p class="lead mt-4">Eén kantoor in Antwerpen, vlak bij Berchem. Geen netwerk, geen callcenter, geen dossierbeheerder die om de zes maanden wisselt.</p>
+  <section class="hero-x">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">Je weet <mark class="hl">wie</mark> je belt.</h1>
+        <p class="hero-x__sub">E&eacute;n kantoor in Antwerpen, vlak bij Berchem. Geen netwerk, geen callcenter, geen dossierbeheerder die om de zes maanden wisselt.</p>
+        <ul class="checks">
+          <li>E&eacute;n kantoor in Antwerpen</li>
+          <li>Geen callcenter</li>
+          <li>E&eacute;n vast aanspreekpunt</li>
+          <li>ITAA-gecertificeerd</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="contact.html">Plan een kennismaking</a>
+          <a class="btn btn--secondary" href="tarief.html">Bereken je tarief</a>
+        </div>
+      </div>
+      <div class="ill-stage" aria-hidden="true">
+        <div class="profile-card float">
+          <div class="profile-card__top">
+            <span class="profile-card__avatar"><svg class="mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0F3D2E"/><path d="M47.01 24.02A17 17 0 1 1 32.00 15.00" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/><circle cx="39.72" cy="16.85" r="6.24" fill="#22C55E"/></svg><span class="profile-card__status"></span></span>
+            <span><b>RDM Accountants</b><em>Boomgaardstraat 145A, Antwerpen</em></span>
+          </div>
+          <div class="profile-card__meta"><span class="ill-pill">online</span><span class="ill-pill ill-pill--soft">ITAA 53.374.753</span><span class="ill-pill ill-pill--soft">sinds 2024</span></div>
+          <div class="profile-actions"><span><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Bel</span><span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Mail</span><span><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Plan</span></div>
+        </div>
+        <div class="ill-bubble ill-bubble--c float float--late">Je belt je eigen accountant, niet een callcenter.</div>
       </div>
     </div>
   </section>
 
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-right stack">
+  <section class="section-sm">
+    <div class="container narrow">
+      <div class="card story" data-reveal>
         <p class="small"><span class="demo-flag" data-note="oprichtingsverhaal_demo">Nog aan te leveren: het oprichtingsverhaal.</span></p>
         <p><span class="tbd" data-field="oprichtingsverhaal">Waarom is RDM opgericht?</span> Drie alinea&rsquo;s, eerste persoon meervoud: waarom het kantoor er kwam, wat jullie fout vonden aan hoe boekhouding meestal loopt, en wat jullie daarom anders doen. Dit is de plek waar een klein kantoor het wint van een netwerkkantoor — en de plek waar het volledig misloopt als het als brochure leest.</p>
         <p>RDM Accountants CommV is opgericht in 2024.</p>
@@ -126,13 +146,11 @@
     </div>
   </section>
 
-  <!-- Block 2 — The team -->
-  <section class="section">
-    <div class="container grid">
-      <div class="span-left">
-        <h2 class="mb-3">Het team</h2>
-        <p class="mb-5">Je krijgt één vast aanspreekpunt, met een eigen mailadres. Niet een algemeen adres waar je bericht in verdwijnt.</p>
-
+  <section class="section band-tint">
+    <div class="container">
+      <h2 class="h-sec center">Het <mark class="hl">team</mark></h2>
+      <p class="lead-c center">Je krijgt &eacute;&eacute;n vast aanspreekpunt, met een eigen mailadres. Niet een algemeen adres waar je bericht in verdwijnt.</p>
+      <div class="team-wrap" data-reveal>
         <ul class="people" data-team>
           <!-- team:start - generated from content.json by tools/apply_content.py; edit there, not here -->
           <li>
@@ -146,52 +164,42 @@
           </li>
           <!-- team:end -->
         </ul>
-
-        <p class="small muted mt-5 measure-56">Het directe mailadres per persoon is geen detail. Het is het bewijs van de bereikbaarheid die de rest van de site belooft — één gedeeld info-adres haalt die belofte onderuit.</p>
       </div>
+      <p class="small muted mt-5 center measure-56">Het directe mailadres per persoon is geen detail. Het is het bewijs van de bereikbaarheid die de rest van de site belooft — één gedeeld info-adres haalt die belofte onderuit.</p>
     </div>
   </section>
 
-  <!-- Block 3 — Waar we voor staan -->
   <section class="section">
-    <div class="container grid">
-      <div class="span-right stack-lg">
-        <h2>Waar we voor staan</h2>
-
-        <p class="chain">
-          <span>Geen papier</span>
-          <span class="chain__rule" aria-hidden="true"></span>
-          <span>geen kantoorbezoek</span>
-          <span class="chain__rule" aria-hidden="true"></span>
-          <span>wel een accountant die opneemt.</span>
-        </p>
-
-        <div class="stack">
+    <div class="container">
+      <h2 class="h-sec center">Waar we voor <mark class="hl">staan</mark></h2>
+      <p class="chain-pills" data-reveal><span>Geen papier</span><i aria-hidden="true"></i><span>Geen kantoorbezoek</span><i aria-hidden="true"></i><span class="is-key">Wel een accountant die opneemt</span></p>
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19l7-7"/></svg></span>
           <h3>Duurzaam, en dan concreet</h3>
-          <p>Duurzaamheid is bij ons geen apart hoofdstuk, het is hoe het werk loopt. Je facturen komen digitaal binnen via mail of Peppol. We drukken niets af om het daarna in te scannen. Je jaarrekening gaat digitaal naar de Nationale Bank, en jouw exemplaar krijg je als bestand, niet als map.</p>
+          <div class="card__body"><p>Duurzaamheid is bij ons geen apart hoofdstuk, het is hoe het werk loopt. Je facturen komen digitaal binnen via mail of Peppol. We drukken niets af om het daarna in te scannen. Je jaarrekening gaat digitaal naar de Nationale Bank, en jouw exemplaar krijg je als bestand, niet als map.</p>
           <p><span class="tbd" data-field="duurzaamheid_extra">Wat doet RDM naast papierloos werken? Bijvoorbeeld: groene stroom, woon-werkverkeer, hosting, afvalbeleid. Alleen opnemen wat klopt.</span></p>
-          <p>Wat we niet claimen: dat we klimaatneutraal zijn, of dat een digitale boekhouding geen voetafdruk heeft. Ze heeft er een. Ze is alleen kleiner dan de kast met ordners die ze vervangt.</p>
-        </div>
-
-        <div class="stack">
+          <p>Wat we niet claimen: dat we klimaatneutraal zijn, of dat een digitale boekhouding geen voetafdruk heeft. Ze heeft er een. Ze is alleen kleiner dan de kast met ordners die ze vervangt.</p></div>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
           <h3>Bereikbaar, en dan begrensd</h3>
-          <p><span class="tbd" data-field="bereikbaarheid">Hier komt de bereikbaarheidsbelofte die RDM effectief waarmaakt. Zie notes.md §4: publiceer geen onbegrensde 24/7-belofte.</span></p>
-          <p>Voorstel, in afwachting: je belt je eigen accountant, niet een algemeen nummer. Tijdens de kantooruren nemen we op. Daarbuiten mag je ons mailen of appen — dringend is dringend.</p>
-        </div>
-
-        <div class="stack">
+          <div class="card__body"><p><span class="tbd" data-field="bereikbaarheid">Hier komt de bereikbaarheidsbelofte die RDM effectief waarmaakt. Zie notes.md §4: publiceer geen onbegrensde 24/7-belofte.</span></p>
+          <p>Voorstel, in afwachting: je belt je eigen accountant, niet een algemeen nummer. Tijdens de kantooruren nemen we op. Daarbuiten mag je ons mailen of appen — dringend is dringend.</p></div>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21l-7-7a4 4 0 0 1 6-6l1 1 1-1a4 4 0 0 1 6 6z"/></svg></span>
           <h3>Klantgericht, en dan meetbaar</h3>
-          <p>Je krijgt geen factuur voor een telefoongesprek. Advies zit in je maandtarief, want een vraag die je niet stelt omdat ze geld kost, is precies de vraag die je wel had moeten stellen.</p>
-        </div>
+          <div class="card__body"><p>Je krijgt geen factuur voor een telefoongesprek. Advies zit in je maandtarief, want een vraag die je niet stelt omdat ze geld kost, is precies de vraag die je wel had moeten stellen.</p></div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Block 4 — Credentials and location -->
-  <section class="section">
-    <div class="container grid">
-      <div class="span-left">
-        <h2 class="mb-5">Erkenning en kantoor</h2>
+  <section class="section band-tint">
+    <div class="container office">
+      <div data-reveal>
+        <h2 class="h-sec">Erkenning en <mark class="hl">kantoor</mark></h2>
         <dl class="rows">
           <div>
             <dt>Erkenning</dt>
@@ -218,9 +226,9 @@
             <dd><span class="tbd" data-field="parkeren">Parkeerinfo nog aan te leveren</span> — betalend straatparkeren of een parking in de buurt.</dd>
           </div>
         </dl>
-
-        <div class="mt-5">
-          <div class="map" data-map
+      </div>
+      <div data-reveal>
+        <div class="map" data-map
                data-src="https://www.openstreetmap.org/export/embed.html?bbox=4.4211%2C51.1988%2C4.4311%2C51.2038&amp;layer=mapnik&amp;marker=51.2012948%2C4.4261101"
                data-title="Kaart met de ligging van Boomgaardstraat 145A, 2018 Antwerpen">
             <div class="map__placeholder">
@@ -230,18 +238,19 @@
               <p class="small mt-3"><a href="https://www.openstreetmap.org/?mlat=51.2012948&amp;mlon=4.4261101#map=18/51.2012948/4.4261101" rel="noopener">Of open de kaart in een nieuw venster</a></p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section section--tight">
-    <div class="container grid">
-      <div class="span-right">
-        <h2 class="mb-3">Weten wat het kost?</h2>
-        <div class="btn-row mt-4">
-          <a class="btn btn--primary" href="tarief.html">Bereken je tarief</a>
+  <section class="section-sm">
+    <div class="container">
+      <div class="cta-banner" data-reveal>
+        <div>
+          <h2 class="h-sec">Weten wat het <mark class="hl">kost</mark>?</h2>
+          <ul class="checks checks--row"><li>Drie vragen</li><li>&Eacute;&eacute;n richtprijs</li><li>Vrijblijvend</li></ul>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="tarief.html">Bereken je tarief</a>
           <a class="btn btn--secondary" href="contact.html">Plan een kennismaking</a>
         </div>
       </div>
@@ -301,6 +310,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=661475e4" defer></script>
+<script src="assets/js/main.js?v=253925b6" defer></script>
 </body>
 </html>
