@@ -1575,3 +1575,18 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   .lost__q { animation: wobble 2.4s ease-in-out infinite; }
   @keyframes wobble { 25% { rotate: -10deg; } 75% { rotate: 10deg; } }
 }
+
+/* --- Mobile header action ---------------------------------------------------
+   On phones the tariff button stays in the header, next to Menu, so the main
+   action never needs a tap to reveal. Desktop already shows it in the nav. */
+.header-cta { display: none; }
+@media (max-width: 900px) {
+  .header .container { gap: 10px; }
+  .header-cta { display: inline-block; margin-left: auto; padding: 10px 16px; font-size: 14.5px; white-space: nowrap; box-shadow: none; }
+  .nav-toggle { margin-left: 0; }
+}
+@media (max-width: 360px) {
+  .header-cta { padding: 9px 12px; font-size: 13.5px; }
+  .logo svg { height: 28px; }
+  .nav-toggle { padding: 9px 11px; }
+}
