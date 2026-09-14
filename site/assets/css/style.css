@@ -170,9 +170,6 @@ a:hover { color: var(--forest); text-decoration-color: var(--forest); }
 
 .band-forest :focus-visible,
 .footer :focus-visible,
-.topbar :focus-visible {
-  outline-color: var(--white);
-}
 
 .skip-link {
   position: absolute;
@@ -287,24 +284,8 @@ a:hover { color: var(--forest); text-decoration-color: var(--forest); }
 /* --- Top bar, header, nav ------------------------------------------------- */
 /* Contact details sit above the header. Hiding them contradicts the promise. */
 
-.topbar {
-  background: var(--forest);
-  color: var(--white);
-  font-size: var(--fs-small);
-}
-.topbar .container {
-  display: flex;
-  gap: var(--s4);
-  align-items: center;
-  min-height: 40px;
-  flex-wrap: wrap;
-}
-.topbar a { color: var(--white); text-decoration-color: rgba(255,255,255,0.5); }
-.topbar a:hover { color: var(--moss); }
-.topbar .tbd { color: var(--moss); border-bottom-color: var(--moss); }
-.topbar__spacer { margin-left: auto; }
 
-@media (max-width: 900px) { .topbar { display: none; } }
+@media (max-width: 900px) { }
 
 .header {
   position: sticky;
@@ -374,16 +355,6 @@ a:hover { color: var(--forest); text-decoration-color: var(--forest); }
   }
   .nav a { font-size: 22px; }
   .nav .btn--primary { margin-top: var(--s2); }
-  .nav__contact {
-    font-size: var(--fs-body);
-    padding-bottom: var(--s3);
-    margin-bottom: 0;
-    border-bottom: 1px solid var(--moss);
-    width: 100%;
-  }
-  .nav__contact a,
-  .nav__contact .tbd { font-size: var(--fs-body); display: block; }
-  .nav__contact > * + * { margin-top: var(--s1); }
   .nav-close {
     position: absolute;
     top: 14px;
@@ -402,7 +373,6 @@ a:hover { color: var(--forest); text-decoration-color: var(--forest); }
 .nav[hidden] { display: none; }
 
 @media (min-width: 901px) {
-  .nav__contact, .nav-close { display: none; }
   .nav[hidden] { display: flex !important; }
 }
 
@@ -747,7 +717,7 @@ legend { padding: 0; }
 .sim__rail[hidden] { display: none; }
 .sim__rail-inner {
   position: sticky;
-  top: 128px;
+  top: 100px;
   background: var(--white);
   border-top: 2px solid var(--fern);
   padding: var(--s4);
@@ -974,7 +944,6 @@ h3 { font-weight: 700; letter-spacing: -0.01em; }
 .logo svg { height: 34px; }
 .nav a { font-weight: 600; }
 .nav .btn--primary { padding: 11px 20px; }
-.topbar { background: var(--forest); }
 
 /* --- hero ----------------------------------------------------------------- */
 .hero-x { padding-block: var(--s7) var(--s8); background:
@@ -1590,3 +1559,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
   .logo svg { height: 28px; }
   .nav-toggle { padding: 9px 11px; }
 }
+
+/* The mobile header already shows the tariff button, so the menu does not
+   repeat it. Desktop keeps it in the nav, where there is no header button. */
+@media (max-width: 900px) { .nav .btn--primary { display: none; } }

@@ -22,6 +22,8 @@ Header, left to right: logo — Diensten — Over ons — Contact — [Bereken j
 
 The simulator is not a plain nav item. It sits at the right as the only filled button in the header, in the accent green. Four text links plus one button; nothing else. No mega-menu — RSM needs one because it has forty service pages, RDM has one service page, and a mega-menu over four links looks like a firm pretending to be bigger than it is.
 
+> **Superseded 2026-09-15:** the contact bar and the in-menu contact block were removed at the client's request; see notes.md.
+
 Phone number and mail address sit in a slim bar above the header on desktop, and move into the mobile menu as the first two items rather than being buried at the bottom. The availability promise is the positioning; hiding the contact details contradicts it.
 
 Mobile: full-screen overlay menu. Same five destinations, phone and mail first, WhatsApp if confirmed.

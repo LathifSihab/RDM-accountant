@@ -37,6 +37,12 @@ These must be answered before any build starts. Nothing below has been invented 
   and cache policy for four hosts, structured data for local search, sitemap,
   robots, full icon set, social card, 404 and thank-you pages, working form
   submission, click-to-load map, and four legal pages as reviewed skeletons.
+- **Contact bar removed (2026-09-15).** At the client's request the slim bar above
+  the header (address, telephone, mail) and the contact block at the top of the
+  mobile menu are gone, on desktop and mobile. This overrides 02-information-
+  architecture.md, which put them there as part of the reachability positioning.
+  Telephone and mail remain in the footer and on the Contact page. The mobile menu
+  also no longer repeats "Bereken je tarief", which is already in the mobile header.
 - **Verified against the KBO (public company register), 2026-09-14.** For
   ondernemingsnummer 1007.002.332: RDM Accountants, commanditaire vennootschap,
   active, begindatum **11 maart 2024**; seat Boomgaardstraat 145A, 2018 Antwerpen;
