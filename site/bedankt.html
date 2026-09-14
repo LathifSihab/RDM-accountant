@@ -28,7 +28,7 @@
 
 <link rel="preload" href="assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="assets/css/style.css?v=0466deaf">
+<link rel="stylesheet" href="assets/css/style.css?v=73699324">
 
 <script type="application/ld+json">
 {
@@ -107,16 +107,26 @@
 </header>
 
 <main id="main">
-  <section class="hero">
-    <div class="container grid">
-      <div class="span-left">
-        <h1>We hebben je bericht.</h1>
+  <section class="hero-x hero-x--page">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">We hebben je bericht.</h1>
         <p class="lead mt-4">Je hoort van ons <span class="tbd" data-field="reactietermijn">binnen welke termijn</span>.
           Kan het niet wachten, bel dan <span class="tbd" data-field="telefoon">telefoonnummer volgt</span>.</p>
         <div class="btn-row mt-5">
           <a class="btn btn--primary" href="index.html">Terug naar de startpagina</a>
           <a class="btn btn--secondary" href="diensten.html">Bekijk onze diensten</a>
         </div>
+      </div>
+      <div class="ill-stage" aria-hidden="true">
+        <div class="sent float">
+          <span class="sent__plane"><svg viewBox="0 0 24 24"><path d="M3 11l18-8-6 18-3-7z"/><path d="M12 14l9-11"/></svg></span>
+          <span class="sent__check"><svg viewBox="0 0 24 24"><path d="M5 12l4 4 10-10"/></svg></span>
+          <b>Bericht verstuurd</b>
+          <em>we nemen contact met je op</em>
+        </div>
+        <span class="confetti c1"></span><span class="confetti c2"></span><span class="confetti c3"></span>
+        <span class="confetti c4"></span><span class="confetti c5"></span><span class="confetti c6"></span>
       </div>
     </div>
   </section>

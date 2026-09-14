@@ -28,7 +28,7 @@
 
 <link rel="preload" href="/assets/fonts/plus-jakarta-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css?v=7840b08d">
-<link rel="stylesheet" href="/assets/css/style.css?v=0466deaf">
+<link rel="stylesheet" href="/assets/css/style.css?v=73699324">
 
 <script type="application/ld+json">
 {
@@ -107,11 +107,26 @@
 </header>
 
 <main id="main">
-  <section class="hero">
-    <div class="container grid">
-      <div class="span-left">
-        <h1>Die pagina bestaat niet.</h1>
+  <section class="hero-x hero-x--page">
+    <div class="container hero-x__grid">
+      <div class="stagger" data-stagger>
+        <h1 class="hero-x__title">Die pagina bestaat niet.</h1>
         <p class="lead mt-4">Misschien is ze verhuisd, misschien klopt er iets niet aan de link. Dit zijn de plekken waar je waarschijnlijk naartoe wou:</p>
+      </div>
+      <div class="ill-stage" aria-hidden="true">
+        <div class="lost">
+          <svg class="lost__path" viewBox="0 0 300 160"><path d="M20 135 C 80 40, 140 150, 200 72 S 262 30, 262 58"/></svg>
+          <span class="lost__pin"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <span class="lost__q">?</span>
+        </div>
+        <div class="ill-chip ill-chip--a float float--late"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg><span>Foutcode 404</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section-sm band-tint">
+    <div class="container narrow">
+      <div class="card legal" data-reveal>
+
         <h2 class="visually-hidden">Waar je waarschijnlijk naartoe wou</h2>
         <ul class="list-rules mt-5">
           <li><h3><a href="/">Startpagina</a></h3><p>Waar RDM voor staat, in het kort.</p></li>
