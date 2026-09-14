@@ -107,6 +107,7 @@
       vorm: radio('vorm'),
       start: radio('start'),
       sector: form.elements.sector.value,
+      vtype: radio('vtype'),
       omzet: radio('omzet'),
       docs: radio('docs'),
       btw: radio('btw'),
@@ -129,6 +130,7 @@
     if (s.vorm) q.set('vorm', s.vorm);
     if (s.start) q.set('start', s.start);
     if (s.sector) q.set('sector', s.sector);
+    if (s.vtype) q.set('vtype', s.vtype);
     if (s.omzet) q.set('omzet', s.omzet);
     if (s.docs) q.set('docs', s.docs);
     if (s.btw) q.set('btw', s.btw);
@@ -149,7 +151,7 @@
   function readUrl() {
     var q = new URLSearchParams(location.search);
 
-    ['vorm', 'start', 'omzet', 'docs', 'btw'].forEach(function (name) {
+    ['vorm', 'vtype', 'start', 'omzet', 'docs', 'btw'].forEach(function (name) {
       var v = q.get(name);
       if (!v) return;
       var el = form.querySelector('input[name="' + name + '"][value="' + v + '"]');
@@ -217,7 +219,11 @@
     if (s.btw === 'vrijgesteld') items.push('Opvolging van je btw-vrijstelling als kleine onderneming');
 
     if (s.vorm === 'vennootschap') {
-      items.push('Jaarrekening en neerlegging bij de Nationale Bank');
+      // A small VOF or CommV is not always required to file with the NBB, so
+      // the filing is only promised where it applies.
+      items.push(s.vtype === 'vof' || s.vtype === 'commv'
+        ? 'Jaarrekening, en neerlegging bij de Nationale Bank waar dat verplicht is'
+        : 'Jaarrekening en neerlegging bij de Nationale Bank');
       items.push('Aangifte vennootschapsbelasting');
     }
     if (s.vorm === 'vzw') items.push('Jaarrekening voor je vzw');
@@ -283,7 +289,13 @@
     reason.textContent = 'Kies eerst ' + text + '.';
   }
 
+  function syncVtype() {
+    var box = document.querySelector('[data-vtype]');
+    if (box) box.hidden = radio('vorm') !== 'vennootschap';
+  }
+
   function sync() {
+    syncVtype();
     var s = readState();
     renderPrice(s);
     renderGate();
@@ -419,6 +431,7 @@
   if (demoFlag) demoFlag.hidden = PRICES_CONFIRMED;
 
   readUrl();
+  syncVtype();
   renderStep();
   var initial = readState();
   if (initial.vorm) { lastPrice = isTerminal(initial) ? null : calculate(initial); }

@@ -181,26 +181,17 @@ string when you change them if you need a faster rollout.
 
 ---
 
-## Logo
+## Logo and look
 
-Concept 2, "Cashflow", from `docs/05-logo-concepts.md` — the brief asked for a
-redesign that could be "a bit out of the box". Letter positions are measured off
-the mark the client supplied, so the composition is theirs; the colliding script
-is replaced by a single forest stroke that leaves the M, passes beneath the R
-and D and exits both sides, with a knockout so it reads as passing behind rather
-than colliding. The same curve appears once at page scale as a divider on the
-homepage.
+**Logo — "the live loop".** An open green ring whose end carries a bright dot:
+money keeps flowing, and the "online now" dot says someone is there. Wordmark
+`rdm accountants` in Plus Jakarta Sans, converted to outlines, so it needs no
+font. Legible at 16px on light and dark tabs. Rationale in `docs/05-logo-concepts.md`.
 
-**Still to do before launch.** The mark is live SVG `<text>`, not outlines, so it
-depends on Playfair Display being available. `05` requires outlined artwork.
-Once the designer delivers the vector:
-
-- Replace the two inline `<svg>` blocks (header and footer) on each page.
-- Re-export the icon set from it. The current PNGs, the `.ico` and
-  `assets/img/og-default.png` were generated from a substitute serif.
-- Test at 16 px on light and dark browser chrome — the test `05` says the
-  original mark fails. The 16 px icon currently drops the curve, because a
-  hairline cannot survive at that size.
+**Look — astro.tax patterns, RDM's own expression.** The client asked for the
+site to follow astro.tax. Its layout patterns are used (hero checklist, sector
+chips, cards, how-it-works rows, FAQ, CTA banner); its text, images, mascot and
+colours are not, and there are no invented ratings. See `docs/04-design-system.md` §v2.
 
 ---
 

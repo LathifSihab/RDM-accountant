@@ -1,5 +1,29 @@
 # 05 — Logo concepts
 
+> **Superseded 2026-09-15 — new identity: "the live loop".** The client asked
+> for a complete, out-of-the-box redesign, and for the site to follow astro.tax's
+> patterns, so the Didone monogram and all three concepts below are retired.
+>
+> The mark is an open ring whose loose end carries a bright green dot. The ring
+> is one continuous stroke — money comes and goes, the cashflow line the client
+> wants on the site. The dot is the same dot every messaging app uses for "online
+> now" — the availability value, in a form everyone already reads. Together:
+> money keeps flowing, and someone is there.
+>
+> The wordmark is lowercase `rdm accountants` in Plus Jakarta Sans 800/600,
+> **converted to outlines**, so it renders identically everywhere with no font
+> dependency. That closes the old "live SVG text" launch warning.
+>
+> Tested: legible at 16px on light and dark browser chrome, which the Didone
+> monogram never was. Files: `site/assets/img/favicon.svg` (app mark), inline
+> lockups in every page header and footer, icons and social card rendered from
+> the vector in Edge.
+>
+> One risk to put to the client: an open ring can read as a loading spinner.
+> The dot overlapping the ring is what separates the two; if it still reads as a
+> spinner to them, closing the gap further is a one-number change.
+
+
 > **Decided 2026-09-14. Concept 2, Cashflow, is built.** The client brief asks
 > to "redo their logo as well, can be a bit out of the box", which rules out
 > keeping the current mark. Concept 2 is the direction on the site now: the

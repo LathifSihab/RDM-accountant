@@ -174,12 +174,6 @@ for p in html_files():
     if loc not in sitemap:
         warn(f"{p.name} is not in sitemap.xml")
 
-if (ROOT / "assets/img/og-default.png").is_file():
-    warn("assets/img/og-default.png was generated with a substitute serif — "
-         "replace it with artwork set in the real brand faces")
-
-warn("the logo is live SVG <text>, not outlines. Ship the designer's vector "
-     "and re-export the icon set from it before launch (05 §Files).")
 
 
 # --- 8. The staging guard ----------------------------------------------------

@@ -1,5 +1,16 @@
 # 04 — Design system
 
+> **v2, 2026-09-15 — astro.tax patterns.** The client asked for the site to follow
+> astro.tax closely. Its *patterns* are adopted — bold sans type, one highlighted
+> word per heading, rounded cards and pill buttons, a hero checklist and trust
+> row, sector chips, alternating how-it-works rows, an FAQ accordion, a closing
+> CTA banner. Its *expression* is not: no copied text, illustrations, mascot,
+> code, or colours, and no ratings or client counts RDM does not have (a row of
+> publicly verifiable registrations replaces them). Implemented as the "v2" layer
+> at the end of `site/assets/css/style.css`. Type is Plus Jakarta Sans, self-hosted.
+> Green stays the brand colour. Where this document's editorial rules (Didone,
+> no eyebrows, no highlighted words, radius 0) conflict with v2, v2 wins.
+
 Derived from the supplied logo: a high-contrast Didone-style serif monogram, R and D above, M centred below, a fine script "Accountants" ruling across the middle, charcoal on a warm off-white. Editorial, quiet, confident. The system extends that rather than replacing it.
 
 ## Colour
