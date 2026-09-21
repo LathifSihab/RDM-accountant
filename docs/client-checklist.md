@@ -128,6 +128,10 @@ je niet kan uitleggen is minder waard dan de ruimte die het inneemt.
 
 We zijn uitgegaan van boekhouding, fiscaliteit, advies en starters.
 
+> **Eén klein puntje:** heeft Clearfacts ergens een bron voor "marktleider"
+> (persbericht, cijfers op hun site)? Dan kunnen we ernaar verwijzen. Niet
+> dringend — de zin blijft staan zoals jullie hem gaven.
+
 **Clearfacts staat nu op de site** (Diensten en de homepage): jullie ontvangen en
 versturen facturen via Peppol met Clearfacts, de cijfers staan doorlopend bij en
 de klant kan ze zelf bekijken op computer of gsm.

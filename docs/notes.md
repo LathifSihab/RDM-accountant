@@ -49,10 +49,14 @@ These must be answered before any build starts. Nothing below has been invented 
   Portrait of Muhammet Erdem supplied and published. Logo wordmark set in capitals to
   match how the name is written everywhere else. Tariffs delivered as an editable
   workbook, RDM-tarieven.xlsx, for the client to fill in.
-- **Open question on one claim.** "Marktleider in pre-accountingsoftware" is the
-  client's wording about a third party. It is a superlative RDM cannot evidence
-  itself; under Belgian rules on misleading advertising a competitor could contest
-  it. Ask Clearfacts for a citable source, or soften to "een van de meest gebruikte".
+- **"Marktleider in pre-accountingsoftware" — published at the client's request.**
+  Raised with them on 2026-09-21: it is a superlative about a third party that RDM
+  cannot evidence itself, and under Belgian rules on misleading advertising a
+  competitor of Clearfacts could contest it. The client asked to keep their wording,
+  so it stands on the homepage and Diensten as supplied. If it is ever challenged,
+  the fix is one of: a citable source from Clearfacts, attribution ("volgens eigen
+  cijfers"), or dropping the superlative — the surrounding sentence works without it.
+  Worth asking Clearfacts for a source at some point; not a launch blocker.
 - **Verified against the KBO (public company register), 2026-09-14.** For
   ondernemingsnummer 1007.002.332: RDM Accountants, commanditaire vennootschap,
   active, begindatum **11 maart 2024**; seat Boomgaardstraat 145A, 2018 Antwerpen;
