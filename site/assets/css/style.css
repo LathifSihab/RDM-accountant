@@ -1058,6 +1058,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
 .sim__running, .result__figure { font-family: var(--display); font-weight: 800; letter-spacing: -0.03em; }
 .sim__progress .n { font-family: var(--text); font-weight: 700; }
 .steps__n, .people__initials { font-family: var(--display); font-weight: 800; }
+.people__photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; background: var(--tint); }
+
 .people__initials { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: var(--tint); color: var(--forest); font-size: 22px; }
 /* Notices can run to a sentence or two. A pill cannot wrap cleanly, so they are
    a rounded box that wraps within its container. */

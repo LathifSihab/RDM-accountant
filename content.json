@@ -9,7 +9,8 @@
     "vraag": "Het telefoonnummer zoals het op de site moet staan. Het belangrijkste ontbrekende gegeven: de hele site belooft bereikbaarheid.",
     "voorbeeld": "+32 3 123 45 67",
     "type": "telefoon",
-    "waarde": null
+    "waarde": "+32 486 05 25 15",
+    "_bron": "Aangeleverd door de klant, 21 september 2026. Vrijgegeven voor publicatie."
   },
   "reactietermijn": {
     "vraag": "Binnen welke termijn krijgt iemand antwoord? Noem nooit een termijn die het kantoor niet haalt.",
@@ -173,7 +174,8 @@
       "Eén object per persoon. Extra teamlid? Kopieer een object en vul het in.",
       "Laat null staan wat je nog niet weet; dat blijft dan als open punt zichtbaar.",
       "Initialen worden automatisch uit de naam afgeleid.",
-      "mail: alleen een zakelijk adres van het kantoor. Nooit een privéadres."
+      "mail: alleen een zakelijk adres van het kantoor. Nooit een privéadres.",
+      "foto: pad zonder maat of extensie, bv. assets/img/naam. Laat weg voor initialen."
     ],
     "leden": [
       {
@@ -181,7 +183,8 @@
         "functie": "Zaakvoerder",
         "rol": null,
         "mail": null,
-        "_bron": "Naam aangeleverd door de klant. Functie volgens de KBO: zaakvoerder sinds 11 maart 2024. De KBO vermeldt ook een privé-mailadres; dat wordt bewust niet gebruikt."
+        "_bron": "Naam aangeleverd door de klant. Functie volgens de KBO: zaakvoerder sinds 11 maart 2024. De KBO vermeldt ook een privé-mailadres; dat wordt bewust niet gebruikt.",
+        "foto": "assets/img/muhammet-erdem"
       }
     ]
   },

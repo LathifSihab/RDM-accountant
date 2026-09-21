@@ -43,6 +43,16 @@ These must be answered before any build starts. Nothing below has been invented 
   architecture.md, which put them there as part of the reachability positioning.
   Telephone and mail remain in the footer and on the Contact page. The mobile menu
   also no longer repeats "Bereken je tarief", which is already in the mobile header.
+- **Client answers received 2026-09-21.** Telephone +32 486 05 25 15, released for
+  publication and now on every page. Clearfacts named as the pre-accounting platform
+  for sending and receiving invoices over Peppol, added to the homepage and Diensten.
+  Portrait of Muhammet Erdem supplied and published. Logo wordmark set in capitals to
+  match how the name is written everywhere else. Tariffs delivered as an editable
+  workbook, RDM-tarieven.xlsx, for the client to fill in.
+- **Open question on one claim.** "Marktleider in pre-accountingsoftware" is the
+  client's wording about a third party. It is a superlative RDM cannot evidence
+  itself; under Belgian rules on misleading advertising a competitor could contest
+  it. Ask Clearfacts for a citable source, or soften to "een van de meest gebruikte".
 - **Verified against the KBO (public company register), 2026-09-14.** For
   ondernemingsnummer 1007.002.332: RDM Accountants, commanditaire vennootschap,
   active, begindatum **11 maart 2024**; seat Boomgaardstraat 145A, 2018 Antwerpen;

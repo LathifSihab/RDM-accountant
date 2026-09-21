@@ -100,9 +100,19 @@ for page in sorted(SITE.glob("*.html")):
             else:
                 initials = ""
 
+            foto = (lid.get("foto") or "").strip()
+            if foto:
+                avatar = ('            <img class="people__photo" alt="" loading="lazy" decoding="async"'
+                          ' width="128" height="128"'
+                          f' src="{esc(foto)}-128.jpg"'
+                          f' srcset="{esc(foto)}-128.jpg 128w, {esc(foto)}-256.jpg 256w" sizes="64px">')
+            else:
+                avatar = ('            <span class="people__initials" aria-hidden="true">'
+                          + (esc(initials) or "&mdash;") + "</span>")
+
             items.append("\n".join([
                 "          <li>",
-                '            <span class="people__initials" aria-hidden="true">' + (esc(initials) or "&mdash;") + "</span>",
+                avatar,
                 "            <div>",
                 "              <h3>" + part("naam", "Naam") + "</h3>",
                 '              <p class="small muted">' + part("functie", "Functie") + "</p>",

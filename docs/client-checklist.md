@@ -9,13 +9,10 @@ er meteen op.
 
 ---
 
-## 1. Het belangrijkste: jullie telefoonnummer
+## 1. Telefoonnummer — ontvangen
 
-De hele site zegt dat je je eigen accountant kan bellen. Op dit moment staat er
-nergens een nummer. Dit is het enige punt dat de site op zichzelf laat
-tegenspreken.
-
-> **Telefoonnummer:** ______________________
+**+32 486 05 25 15** staat nu op de site: in de kop van elke pagina, in de
+voettekst, op de contactpagina en in de gegevens die Google uitleest.
 
 ## 2. Wat jullie beloven over bereikbaarheid
 
@@ -39,7 +36,12 @@ Ons voorstel, pas het gerust aan:
 De rekentool op de site werkt volledig, maar rekent nu met **verzonnen
 bedragen**. Die moeten weg voor de site publiek gaat.
 
-We hebben per onderdeel een bedrag nodig:
+**Vul ze in in `RDM-tarieven.xlsx`** (meegeleverd). Enkel de gele cellen
+invullen; op blad *Simulatie* kan je meteen uitproberen wat een klant te zien
+krijgt, en onderaan staan drie controlevoorbeelden. Stuur het terug en wij zetten
+de bedragen in de rekentool.
+
+De tabel hieronder is dezelfde lijst, voor als je liever op papier werkt:
 
 | | Nu (verzonnen) | Jullie tarief |
 |---|---|---|
@@ -73,6 +75,7 @@ We hebben één naam ontvangen, en die staat nu op de site:
 |---|---|
 | Naam | **Muhammet Erdem** |
 | Functie | **Zaakvoerder** — zo vermeld in de KBO, sinds 11 maart 2024 |
+| Foto | **ontvangen** en op de site gezet |
 | Eén zin: wat volgt hij op? | ______________________ |
 | Direct mailadres (zakelijk) | ______________________ |
 
@@ -85,10 +88,8 @@ We hebben één naam ontvangen, en die staat nu op de site:
 De KBO vermeldt ook een privé-mailadres. Dat zetten we bewust **niet** op de
 site; we hebben een zakelijk adres nodig.
 
-Foto's zijn **niet** nodig om live te gaan. We tonen nu de initialen van elke
-persoon, gezet in het lettertype van het logo. Sturen jullie later toch
-portretfoto's, dan zetten we die er zonder verdere aanpassing in. Stockfoto's
-gebruiken we niet.
+De foto van Muhammet staat op de site. Komen er nog collega's bij, dan hebben we
+per persoon dezelfde vier gegevens nodig; een foto mag, initialen kunnen ook.
 
 Dat directe mailadres is geen detail. Eén gedeeld `info@` voor iedereen haalt
 precies de belofte onderuit waar de rest van de site op steunt.
@@ -126,6 +127,10 @@ je niet kan uitleggen is minder waard dan de ruimte die het inneemt.
 ## 7. Diensten
 
 We zijn uitgegaan van boekhouding, fiscaliteit, advies en starters.
+
+**Clearfacts staat nu op de site** (Diensten en de homepage): jullie ontvangen en
+versturen facturen via Peppol met Clearfacts, de cijfers staan doorlopend bij en
+de klant kan ze zelf bekijken op computer of gsm.
 
 > **Klopt dat?** ______________________
 > **Bieden jullie ook loonadministratie, juridisch advies of

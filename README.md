@@ -32,6 +32,13 @@ once with the pages it affects. **Deploy only when it passes.** Current state:
 **`docs/client-checklist.md` is the version to send RDM** — plain Dutch, no
 jargon, grouped by who can answer it.
 
+**`RDM-tarieven.xlsx`** (repo root) is the client-facing pricing sheet: yellow
+cells only, a Simulatie tab that mirrors the calculator, and three control rows
+matching the worked examples in `docs/06-price-simulator-spec.md`. When it comes
+back filled in, copy the figures into "The rule set" in
+`site/assets/js/simulator.js`, update `tools/test_pricing.js`, and set
+`PRICES_CONFIRMED = true`.
+
 **`content.json` is where the answers go.** Every placeholder on the site
 carries a key, so the telephone number is one entry here rather than 37 edits
 across 11 files. Fill in `waarde`, then:
